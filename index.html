@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gramática Española</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top-bar">
+  <a href="index.html" class="top-bar-logo">📚 <span class="site-name">Gramática Española</span></a>
+  <button class="hamburger" id="hamburger" aria-label="Menú">☰</button>
+</header>
+
+<div class="app-body">
+  <nav class="sidebar" id="sidebar-nav" aria-label="Navegación principal"></nav>
+
+  <main class="page-main">
+    <div class="home-hero">
+      <div class="level-badge">A1 · A2 · B1</div>
+      <h1>Gramática Española</h1>
+      <p>Explicaciones visuales, ejemplos claros y ejercicios prácticos para dominar el español.</p>
+    </div>
+
+    <div class="home-content">
+      <h2 class="home-category-title"><span class="cat-icon">📚</span> Gramática</h2>
+
+      <div class="topic-grid">
+
+        <a href="verbos.html" class="topic-card">
+          <div class="tc-icon">⏰</div>
+          <div class="tc-title">Tiempos Verbales</div>
+          <div class="tc-desc">Presente, pasado, futuro — las conjugaciones esenciales con tablas y ejemplos.</div>
+          <div class="tc-footer">
+            <span class="tc-arrow">→</span>
+          </div>
+        </a>
+
+        <a href="ser-estar.html" class="topic-card">
+          <div class="tc-icon">🔀</div>
+          <div class="tc-title">Ser y Estar</div>
+          <div class="tc-desc">El dilema más frecuente del español. Aprende a distinguirlos con reglas claras.</div>
+          <div class="tc-footer">
+            <span class="tc-arrow">→</span>
+          </div>
+        </a>
+
+        <a href="preposiciones.html" class="topic-card">
+          <div class="tc-icon">📍</div>
+          <div class="tc-title">Preposiciones</div>
+          <div class="tc-desc">De, a, en, por, para... explicadas con ejemplos y diagramas visuales.</div>
+          <div class="tc-footer">
+            <span class="tc-arrow">→</span>
+          </div>
+        </a>
+
+        <a href="articulos.html" class="topic-card">
+          <div class="tc-icon">📝</div>
+          <div class="tc-title">Artículos</div>
+          <div class="tc-desc">El/la/los/las y un/una — cuándo usarlos, cuándo omitirlos y el género.</div>
+          <div class="tc-footer">
+            <span class="tc-arrow">→</span>
+          </div>
+        </a>
+
+        <div class="topic-card soon">
+          <div class="tc-icon">🏷️</div>
+          <div class="tc-title">Sustantivos</div>
+          <div class="tc-desc">Género, número y formación del plural en español.</div>
+          <div class="tc-footer"><span class="tc-pronto">Próximamente</span></div>
+        </div>
+
+        <div class="topic-card soon">
+          <div class="tc-icon">👤</div>
+          <div class="tc-title">Pronombres</div>
+          <div class="tc-desc">Pronombres personales, reflexivos y de complemento.</div>
+          <div class="tc-footer"><span class="tc-pronto">Próximamente</span></div>
+        </div>
+
+        <div class="topic-card soon">
+          <div class="tc-icon">✨</div>
+          <div class="tc-title">Adjetivos</div>
+          <div class="tc-desc">Concordancia, posición y grados comparativos.</div>
+          <div class="tc-footer"><span class="tc-pronto">Próximamente</span></div>
+        </div>
+
+        <div class="topic-card soon">
+          <div class="tc-icon">🔄</div>
+          <div class="tc-title">Adverbios</div>
+          <div class="tc-desc">Cómo y cuándo modificar verbos, adjetivos y oraciones.</div>
+          <div class="tc-footer"><span class="tc-pronto">Próximamente</span></div>
+        </div>
+
+        <div class="topic-card soon">
+          <div class="tc-icon">🔗</div>
+          <div class="tc-title">Conectores</div>
+          <div class="tc-desc">Enlaza ideas con pero, sin embargo, aunque y más.</div>
+          <div class="tc-footer"><span class="tc-pronto">Próximamente</span></div>
+        </div>
+
+        <div class="topic-card soon">
+          <div class="tc-icon">🌀</div>
+          <div class="tc-title">Subjuntivo</div>
+          <div class="tc-desc">Cuándo y cómo usar el modo subjuntivo en tus oraciones.</div>
+          <div class="tc-footer"><span class="tc-pronto">Próximamente</span></div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</div>
+
+<footer>
+  <p>Gramática Española · Aprende con explicaciones claras y ejemplos reales</p>
+</footer>
+
+<script src="nav.js"></script>
+<script src="main.js"></script>
+<script>buildSidebar('home');</script>
+</body>
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artículos en Español | Gramática Española</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .art-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .art-box {
+      background: white;
+      border-radius: 16px;
+      box-shadow: var(--card-shadow);
+      overflow: hidden;
+    }
+    .art-box-header {
+      padding: 12px 20px;
+      font-weight: 900;
+      font-size: 0.9rem;
+      color: white;
+      background: var(--dark);
+    }
+    .art-cell-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .art-cell {
+      padding: 12px 20px;
+      text-align: center;
+      border-bottom: 1px solid #f3f4f6;
+      font-size: 0.82rem;
+    }
+    .art-cell:nth-child(odd) { border-right: 1px solid #f3f4f6; }
+    .art-cell .art-label {
+      font-size: 0.65rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #9ca3af;
+      margin-bottom: 4px;
+    }
+    .art-cell .art-form {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--dark);
+    }
+    .art-cell .art-example {
+      font-size: 0.72rem;
+      color: #6b7280;
+      font-style: italic;
+      margin-top: 4px;
+    }
+    .art-cell.def { background: #fff5f5; }
+    .art-cell.def .art-form { color: var(--red); }
+    .art-cell.indef { background: #f0fdf4; }
+    .art-cell.indef .art-form { color: var(--green); }
+    .gender-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .gender-table th, .gender-table td {
+      padding: 10px 16px;
+      text-align: left;
+      font-size: 0.85rem;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    .gender-table th { background: var(--dark); color: white; font-weight: 800; }
+    .gender-table tr:last-child td { border-bottom: none; }
+    .gender-table tr:nth-child(even) td { background: #f9fafb; }
+    .omit-list { list-style: none; }
+    .omit-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid #f3f4f6;
+      font-size: 0.875rem;
+    }
+    .omit-list li:last-child { border-bottom: none; }
+    .omit-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
+    .omit-body { line-height: 1.45; }
+    .omit-body em { color: #374151; display: block; margin-top: 4px; font-size: 0.83rem; }
+    .contraction-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .contraction-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: var(--card-shadow);
+      padding: 24px;
+      text-align: center;
+    }
+    .contraction-formula {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #6b7280;
+      margin-bottom: 8px;
+    }
+    .contraction-result {
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--red);
+      margin-bottom: 8px;
+    }
+    .contraction-ex {
+      font-size: 0.82rem;
+      font-style: italic;
+      color: #374151;
+    }
+    @media (max-width: 580px) {
+      .art-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="top-bar">
+  <a href="index.html" class="top-bar-logo">📚 <span class="site-name">Gramática Española</span></a>
+  <button class="hamburger" id="hamburger" aria-label="Menú">☰</button>
+</header>
+
+<div class="app-body">
+  <nav class="sidebar" id="sidebar-nav" aria-label="Navegación principal"></nav>
+
+  <main class="page-main">
+
+    <div class="hero">
+      <div class="level-badge">Nivel A1</div>
+      <h1>Los Artículos en Español</h1>
+      <p>El, la, un, una — cuándo usarlos, cuándo omitirlos y cómo concuerdan con el género.</p>
+    </div>
+
+    <nav class="sticky-nav" aria-label="Secciones">
+      <ul>
+        <li><a href="#definidos">📘 Definidos</a></li>
+        <li><a href="#indefinidos">📗 Indefinidos</a></li>
+        <li><a href="#genero">⚧ Género</a></li>
+        <li><a href="#omision">🚫 Omisión</a></li>
+        <li><a href="#contracciones">🔗 Del / Al</a></li>
+        <li><a href="#resumen">📋 Resumen</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+
+      <!-- ═══ DEFINIDOS ═══ -->
+      <section id="definidos" class="section">
+        <h2 class="section-title"><span class="ico">📘</span> Artículos Definidos</h2>
+
+        <div class="art-grid">
+          <div class="art-box">
+            <div class="art-box-header" style="background:var(--blue)">MASCULINO</div>
+            <div class="art-cell-grid">
+              <div class="art-cell def">
+                <div class="art-label">Singular</div>
+                <div class="art-form">el</div>
+                <div class="art-example">el libro</div>
+              </div>
+              <div class="art-cell def">
+                <div class="art-label">Plural</div>
+                <div class="art-form">los</div>
+                <div class="art-example">los libros</div>
+              </div>
+            </div>
+          </div>
+          <div class="art-box">
+            <div class="art-box-header" style="background:var(--red)">FEMENINO</div>
+            <div class="art-cell-grid">
+              <div class="art-cell def">
+                <div class="art-label">Singular</div>
+                <div class="art-form">la</div>
+                <div class="art-example">la mesa</div>
+              </div>
+              <div class="art-cell def">
+                <div class="art-label">Plural</div>
+                <div class="art-form">las</div>
+                <div class="art-example">las mesas</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <p class="def">Se usan cuando el sustantivo es <strong>conocido o específico</strong>:</p>
+          <div class="examples" style="margin-top:12px">
+            <div class="ex"><b>El</b> perro de mi vecina es muy simpático. (conocemos al perro)</div>
+            <div class="ex">¿Puedes cerrar <b>la</b> puerta? (ambos sabemos de qué puerta hablamos)</div>
+            <div class="ex">Me gustan <b>los</b> gatos. (los gatos en general = toda la especie)</div>
+            <div class="ex">Compra <b>las</b> manzanas que te pedí. (las manzanas concretas)</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <p class="def" style="color:var(--red)">⚠️ Caso especial: <strong>EL</strong> con sustantivos femeninos</p>
+          <p style="font-size:0.88rem; color:#374151; margin:12px 0 0; line-height:1.5;">
+            Se usa <strong>el</strong> (no <em>la</em>) antes de sustantivos femeninos que empiezan con <strong>A tónica (a/ha)</strong>
+            para evitar el encuentro de vocales. En plural vuelve a ser <strong>las</strong>.
+          </p>
+          <div class="uses-grid" style="margin-top:16px">
+            <div class="use-item">
+              <span class="use-tag">el agua</span>
+              <p>las aguas <em>→ El agua está fría.</em></p>
+            </div>
+            <div class="use-item">
+              <span class="use-tag">el alma</span>
+              <p>las almas <em>→ Tiene un alma generosa.</em></p>
+            </div>
+            <div class="use-item">
+              <span class="use-tag">el hacha</span>
+              <p>las hachas <em>→ El hacha está afilada.</em></p>
+            </div>
+            <div class="use-item">
+              <span class="use-tag">el arte</span>
+              <p>las artes <em>→ El arte moderno me fascina.</em></p>
+            </div>
+            <div class="use-item">
+              <span class="use-tag">el aula</span>
+              <p>las aulas <em>→ El aula está llena.</em></p>
+            </div>
+            <div class="use-item">
+              <span class="use-tag">el hambre</span>
+              <p>— <em>Tengo mucha hambre. / El hambre es un problema.</em></p>
+            </div>
+          </div>
+          <div class="tip yellow" style="margin-top:0">
+            <span class="ti">💡</span>
+            <span>Con adjetivo entre el artículo y el sustantivo: <em>la fría agua, la buena alma</em> — vuelve <strong>la</strong>.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ INDEFINIDOS ═══ -->
+      <section id="indefinidos" class="section">
+        <h2 class="section-title"><span class="ico">📗</span> Artículos Indefinidos</h2>
+
+        <div class="art-grid">
+          <div class="art-box">
+            <div class="art-box-header" style="background:var(--blue)">MASCULINO</div>
+            <div class="art-cell-grid">
+              <div class="art-cell indef">
+                <div class="art-label">Singular</div>
+                <div class="art-form" style="color:var(--green)">un</div>
+                <div class="art-example">un libro</div>
+              </div>
+              <div class="art-cell indef">
+                <div class="art-label">Plural</div>
+                <div class="art-form" style="color:var(--green)">unos</div>
+                <div class="art-example">unos libros</div>
+              </div>
+            </div>
+          </div>
+          <div class="art-box">
+            <div class="art-box-header" style="background:var(--red)">FEMENINO</div>
+            <div class="art-cell-grid">
+              <div class="art-cell indef">
+                <div class="art-label">Singular</div>
+                <div class="art-form" style="color:var(--green)">una</div>
+                <div class="art-example">una mesa</div>
+              </div>
+              <div class="art-cell indef">
+                <div class="art-label">Plural</div>
+                <div class="art-form" style="color:var(--green)">unas</div>
+                <div class="art-example">unas mesas</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <p class="def">Se usan cuando el sustantivo es <strong>desconocido, inespecífico o mencionado por primera vez</strong>:</p>
+          <div class="examples" style="margin-top:12px">
+            <div class="ex">Tengo <b>un</b> perro. (solo decimos que existe, sin identificarlo)</div>
+            <div class="ex">Busco <b>una</b> farmacia por aquí. (cualquier farmacia, no una concreta)</div>
+            <div class="ex">He visto <b>unas</b> flores preciosas en el mercado.</div>
+            <div class="ex">¿Puedes traerme <b>un</b> vaso de agua?</div>
+          </div>
+        </div>
+
+        <div class="pair">
+          <div class="pair-half">
+            <span class="badge blue">EL/LA</span>
+            <p class="def">Conocido, identificado, ya mencionado</p>
+            <div class="examples">
+              <div class="ex">¿Dónde está <b>el</b> gato? <br><small>(ya sabemos de qué gato hablamos)</small></div>
+              <div class="ex">Pasa a buscar <b>las</b> llaves que te dejé.</div>
+            </div>
+          </div>
+          <div class="pair-divider"></div>
+          <div class="pair-half">
+            <span class="badge green">UN/UNA</span>
+            <p class="def">Nuevo, inespecífico, primera mención</p>
+            <div class="examples">
+              <div class="ex">Tengo <b>un</b> gato. <br><small>(lo mencionamos por primera vez)</small></div>
+              <div class="ex">Necesito <b>unas</b> llaves nuevas.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ GÉNERO ═══ -->
+      <section id="genero" class="section">
+        <h2 class="section-title"><span class="ico">⚧</span> El Género de los Sustantivos</h2>
+
+        <p style="font-size:0.92rem; color:#6b7280; font-weight:600; margin-bottom:20px;">
+          El género del sustantivo determina qué artículo usar. Aprende las reglas y las excepciones más frecuentes.
+        </p>
+
+        <div class="tbl-card">
+          <table class="gender-table">
+            <thead>
+              <tr>
+                <th>Regla</th>
+                <th style="background:var(--blue)">Masculino</th>
+                <th style="background:var(--red)">Femenino</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Terminaciones más comunes</strong></td>
+                <td>-o, -or, -aje, -ista, -ma (gr.)<br><em>libro, actor, viaje, día</em></td>
+                <td>-a, -ión, -dad, -ez, -tud, -umbre<br><em>casa, canción, ciudad, niñez</em></td>
+              </tr>
+              <tr>
+                <td><strong>Personas y animales</strong></td>
+                <td>el hombre, el gato, el profesor</td>
+                <td>la mujer, la gata, la profesora</td>
+              </tr>
+              <tr>
+                <td><strong>Días, meses, idiomas</strong></td>
+                <td>el lunes, el enero (frío), el español</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><strong>Ríos, montañas, mares</strong></td>
+                <td>el Ebro, el Atlántico</td>
+                <td>las Rocosas, la Sierra Nevada</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="section-label">Excepciones frecuentes — masculino en -a</h3>
+        <div class="pos-grid pos-grid--wide">
+          <div class="pos-item">
+            <div class="pe">📌</div>
+            <div class="pos-badge pos-badge--red">el problema</div>
+            <div class="pm">problema, tema, sistema</div>
+            <div class="pex">Origen griego (-ma)</div>
+          </div>
+          <div class="pos-item">
+            <div class="pe">📌</div>
+            <div class="pos-badge pos-badge--red">el mapa</div>
+            <div class="pm">mapa, día, sofá</div>
+            <div class="pex">Memorizar caso a caso</div>
+          </div>
+          <div class="pos-item">
+            <div class="pe">📌</div>
+            <div class="pos-badge pos-badge--red">el clima</div>
+            <div class="pm">clima, drama, poema</div>
+            <div class="pex">Origen griego (-ma)</div>
+          </div>
+        </div>
+
+        <h3 class="section-label">Excepciones — femenino en -o</h3>
+        <div class="pos-grid pos-grid--wide">
+          <div class="pos-item">
+            <div class="pe">📌</div>
+            <div class="pos-badge pos-badge--teal">la mano</div>
+            <div class="pm">Solo "mano"</div>
+            <div class="pex">¡Memorizar! Es femenino.</div>
+          </div>
+          <div class="pos-item">
+            <div class="pe">📌</div>
+            <div class="pos-badge pos-badge--teal">la foto</div>
+            <div class="pm">foto, moto, radio</div>
+            <div class="pex">Abreviaciones femeninas</div>
+          </div>
+        </div>
+
+        <div class="tip blue">
+          <span class="ti">🔍</span>
+          <div>
+            <strong>Mismo sustantivo, género diferente = significado diferente:</strong><br>
+            el capital (dinero) / la capital (ciudad principal) &nbsp;|&nbsp;
+            el cura (sacerdote) / la cura (remedio) &nbsp;|&nbsp;
+            el guía (guía turístico) / la guía (libro guía)
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ OMISIÓN ═══ -->
+      <section id="omision" class="section">
+        <h2 class="section-title"><span class="ico">🚫</span> Cuándo Omitir el Artículo</h2>
+
+        <div class="card">
+          <ul class="omit-list">
+            <li>
+              <div class="omit-icon">👔</div>
+              <div class="omit-body">
+                <strong>Profesión después de SER</strong> (sin adjetivo)
+                <em>Soy <del style="color:#9ca3af">una</del> médica. → Soy médica. ✓</em>
+                <em>Pero: Soy <strong>una</strong> médica muy buena. (con adjetivo, sí lleva artículo)</em>
+              </div>
+            </li>
+            <li>
+              <div class="omit-icon">🗣️</div>
+              <div class="omit-body">
+                <strong>Idiomas después de HABLAR, ENTENDER, APRENDER</strong>
+                <em>Hablo <del style="color:#9ca3af">el</del> español y entiendo <del style="color:#9ca3af">el</del> italiano. ✓</em>
+                <em>Pero después de otros verbos sí puede ir: <em>El español es mi idioma favorito.</em></em>
+              </div>
+            </li>
+            <li>
+              <div class="omit-icon">🌍</div>
+              <div class="omit-body">
+                <strong>La mayoría de países y ciudades</strong>
+                <em>Vivo en <del style="color:#9ca3af">la</del> España, en <del style="color:#9ca3af">el</del> Francia.</em>
+                <em>Excepciones que llevan artículo: <strong>el</strong> Salvador, <strong>los</strong> Estados Unidos, <strong>el</strong> Reino Unido, <strong>la</strong> India, <strong>la</strong> Argentina (en Argentina formal).</em>
+              </div>
+            </li>
+            <li>
+              <div class="omit-icon">🥛</div>
+              <div class="omit-body">
+                <strong>Sustantivos incontables en sentido general</strong>
+                <em>Bebo <del style="color:#9ca3af">el</del> agua. ✓ (en general, sin especificar cuál)</em>
+                <em>Pero: Bebo <strong>el</strong> agua de esta botella. (específica)</em>
+              </div>
+            </li>
+            <li>
+              <div class="omit-icon">📞</div>
+              <div class="omit-body">
+                <strong>Apelaciones directas (vocativo)</strong>
+                <em>¡Hola, <del style="color:#9ca3af">el</del> doctor García! → ¡Hola, doctor García! ✓</em>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ═══ CONTRACCIONES ═══ -->
+      <section id="contracciones" class="section">
+        <h2 class="section-title"><span class="ico">🔗</span> Contracciones: DEL y AL</h2>
+
+        <p style="font-size:0.92rem; color:#6b7280; font-weight:600; margin-bottom:20px;">
+          En español, dos preposiciones se contraen obligatoriamente con el artículo <strong>el</strong> (masculino singular).
+        </p>
+
+        <div class="contraction-grid">
+          <div class="contraction-card">
+            <div class="contraction-formula">de + el =</div>
+            <div class="contraction-result">DEL</div>
+            <div class="contraction-ex">Vengo <strong>del</strong> trabajo.<br>Es el perro <strong>del</strong> vecino.<br>Hablo <strong>del</strong> tema.</div>
+          </div>
+          <div class="contraction-card">
+            <div class="contraction-formula">a + el =</div>
+            <div class="contraction-result">AL</div>
+            <div class="contraction-ex">Voy <strong>al</strong> mercado.<br>Llama <strong>al</strong> médico.<br>Mira <strong>al</strong> cielo.</div>
+          </div>
+        </div>
+
+        <div class="tip red">
+          <span class="ti">⚠️</span>
+          <div>
+            <strong>¡Sin contracción con el pronombre ÉL!</strong><br>
+            Si <em>él</em> es un pronombre personal (= he), NO hay contracción:<br>
+            ✓ <em>Vengo de <strong>él</strong>.</em> (de él = from him) &nbsp;≠&nbsp; <em>Vengo <strong>del</strong> trabajo.</em> (del = de + el artículo)
+          </div>
+        </div>
+
+        <div class="card">
+          <p class="def">Con otros artículos NO hay contracción:</p>
+          <div class="examples" style="margin-top:12px">
+            <div class="ex">de + la = <b>de la</b> tienda (no "dela")</div>
+            <div class="ex">de + los = <b>de los</b> niños (no "delos")</div>
+            <div class="ex">a + la = <b>a la</b> farmacia (no "ala")</div>
+            <div class="ex">a + las = <b>a las</b> tres (no "alas")</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ RESUMEN ═══ -->
+      <section id="resumen" class="section">
+        <h2 class="section-title"><span class="ico">📋</span> Resumen — Todos los Artículos</h2>
+
+        <div class="tbl-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Artículo</th>
+                <th>Género/número</th>
+                <th>Cuándo usar</th>
+                <th>Ejemplo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="tag tag--blue">el</span></td>
+                <td>masc. singular</td>
+                <td>conocido / específico</td>
+                <td><em>el libro, el agua (f!)</em></td>
+              </tr>
+              <tr>
+                <td><span class="tag tag--blue">los</span></td>
+                <td>masc. plural</td>
+                <td>conocido / específico</td>
+                <td><em>los libros, los días</em></td>
+              </tr>
+              <tr>
+                <td><span class="tag tag--red">la</span></td>
+                <td>fem. singular</td>
+                <td>conocido / específico</td>
+                <td><em>la mesa, la ciudad</em></td>
+              </tr>
+              <tr>
+                <td><span class="tag tag--red">las</span></td>
+                <td>fem. plural</td>
+                <td>conocido / específico</td>
+                <td><em>las mesas, las aguas</em></td>
+              </tr>
+              <tr>
+                <td><span class="tag tag--green">un</span></td>
+                <td>masc. singular</td>
+                <td>inespecífico / primera mención</td>
+                <td><em>un libro, un día</em></td>
+              </tr>
+              <tr>
+                <td><span class="tag tag--green">unos</span></td>
+                <td>masc. plural</td>
+                <td>inespecífico / aproximado</td>
+                <td><em>unos libros (= some books)</em></td>
+              </tr>
+              <tr>
+                <td><span class="tag tag--green">una</span></td>
+                <td>fem. singular</td>
+                <td>inespecífico / primera mención</td>
+                <td><em>una mesa, una ciudad</em></td>
+              </tr>
+              <tr>
+                <td><span class="tag tag--green">unas</span></td>
+                <td>fem. plural</td>
+                <td>inespecífico / aproximado</td>
+                <td><em>unas mesas (= some tables)</em></td>
+              </tr>
+              <tr>
+                <td><span class="tag tag--orange">del</span></td>
+                <td colspan="2">de + el (contracción obligatoria)</td>
+                <td><em>Vengo del trabajo.</em></td>
+              </tr>
+              <tr>
+                <td><span class="tag tag--orange">al</span></td>
+                <td colspan="2">a + el (contracción obligatoria)</td>
+                <td><em>Voy al mercado.</em></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </div><!-- /.content -->
+  </main>
+</div><!-- /.app-body -->
+
+<footer>
+  <p>Gramática Española · <a href="index.html">Volver al inicio</a></p>
+</footer>
+
+<script src="nav.js"></script>
+<script src="main.js"></script>
+<script>buildSidebar('articulos');</script>
+</body>
+</html>

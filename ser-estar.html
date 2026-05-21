@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ser y Estar | Gramática Española</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .se-pair .pair-half:first-child { border-top: 4px solid var(--red); }
+    .se-pair .pair-half:last-child  { border-top: 4px solid var(--blue); }
+    .use-list { list-style: none; margin-top: 12px; }
+    .use-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 10px 0; border-bottom: 1px solid #f3f4f6; font-size: 0.875rem;
+    }
+    .use-list li:last-child { border-bottom: none; }
+    .use-label {
+      flex-shrink: 0; font-size: 0.65rem; font-weight: 800;
+      padding: 3px 8px; border-radius: 6px; text-transform: uppercase; margin-top: 2px;
+    }
+    .use-label.red  { background: #fff1f2; color: var(--red); }
+    .use-label.blue { background: #eff6ff; color: var(--blue); }
+    .use-body { line-height: 1.45; }
+    .use-body em { color: #374151; display: block; margin-top: 3px; font-size: 0.85rem; }
+    .adj-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px; margin-bottom: 24px;
+    }
+    .adj-card {
+      background: white; border-radius: 16px; box-shadow: var(--card-shadow); overflow: hidden;
+    }
+    .adj-card-head {
+      background: var(--dark); color: white; padding: 10px 18px;
+      font-weight: 900; font-size: 1.1rem; text-align: center; letter-spacing: 1px;
+    }
+    .adj-row {
+      display: grid; grid-template-columns: 1fr 1fr;
+    }
+    .adj-cell {
+      padding: 12px 16px; font-size: 0.82rem; border-bottom: 1px solid #f3f4f6;
+    }
+    .adj-cell:first-child { border-right: 2px solid #f3f4f6; }
+    .adj-cell .meaning { font-weight: 700; color: var(--dark); margin-bottom: 4px; }
+    .adj-cell em { font-size: 0.78rem; color: #6b7280; }
+    .adj-head-row { display: grid; grid-template-columns: 1fr 1fr; }
+    .adj-head-cell {
+      padding: 8px 16px; font-size: 0.72rem; font-weight: 900;
+      text-transform: uppercase; letter-spacing: 1px;
+    }
+    .adj-head-cell.red  { background: #fff1f2; color: var(--red); }
+    .adj-head-cell.blue { background: #eff6ff; color: var(--blue); }
+  </style>
+</head>
+<body>
+
+<header class="top-bar">
+  <a href="index.html" class="top-bar-logo">📚 <span class="site-name">Gramática Española</span></a>
+  <button class="hamburger" id="hamburger" aria-label="Menú">☰</button>
+</header>
+
+<div class="app-body">
+  <nav class="sidebar" id="sidebar-nav" aria-label="Navegación principal"></nav>
+
+  <main class="page-main">
+
+    <div class="hero">
+      <div class="level-badge">Nivel A1 – A2</div>
+      <h1>Ser y Estar</h1>
+      <p>Dos verbos para "to be" — aprende cuándo usar cada uno con reglas claras y ejemplos.</p>
+    </div>
+
+    <nav class="sticky-nav" aria-label="Secciones">
+      <ul>
+        <li><a href="#intro">📌 Diferencia clave</a></li>
+        <li><a href="#ser">🔴 SER</a></li>
+        <li><a href="#estar">🔵 ESTAR</a></li>
+        <li><a href="#adjetivos">🔄 Adjetivos</a></li>
+        <li><a href="#resumen">📋 Resumen</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+
+      <!-- INTRO -->
+      <section id="intro" class="section">
+        <h2 class="section-title"><span class="ico">📌</span> La Diferencia Clave</h2>
+
+        <div class="pair se-pair">
+          <div class="pair-half">
+            <span class="badge red">SER</span>
+            <p class="def">Características <strong>permanentes o esenciales</strong></p>
+            <p class="sub">Identidad, origen, material, relaciones, tiempo</p>
+            <div class="examples">
+              <div class="ex">Soy <b>española</b>. (nacionalidad — permanente)</div>
+              <div class="ex">La mesa <b>es</b> de madera. (material — permanente)</div>
+              <div class="ex">Son las <b>3</b>. (hora — objetiva)</div>
+            </div>
+          </div>
+          <div class="pair-divider"></div>
+          <div class="pair-half">
+            <span class="badge blue">ESTAR</span>
+            <p class="def">Estados <strong>temporales o cambiables</strong></p>
+            <p class="sub">Ubicación, salud, emociones, resultados</p>
+            <div class="examples">
+              <div class="ex"><b>Estoy</b> en casa. (ubicación — cambia)</div>
+              <div class="ex"><b>Estoy</b> cansada. (estado temporal)</div>
+              <div class="ex">La puerta <b>está</b> cerrada. (resultado)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tip yellow">
+          <span class="ti">💡</span>
+          <span>
+            <strong>Regla de oro:</strong> si describes cómo <em>es algo en esencia</em> → <strong>SER</strong>.
+            Si describes cómo <em>está algo ahora mismo</em> → <strong>ESTAR</strong>.
+          </span>
+        </div>
+
+        <!-- Conjugación: SER y ESTAR -->
+        <h3 class="section-label" style="margin-top:28px">Conjugación — Presente de indicativo</h3>
+        <div class="conj-grid">
+          <div class="conj-box">
+            <div class="conj-box-header red">SER</div>
+            <div class="conj-row"><span class="conj-pron">yo</span><span class="conj-form">soy</span></div>
+            <div class="conj-row"><span class="conj-pron">tú</span><span class="conj-form">eres</span></div>
+            <div class="conj-row"><span class="conj-pron">él/ella/usted</span><span class="conj-form">es</span></div>
+            <div class="conj-row"><span class="conj-pron">nosotros</span><span class="conj-form">somos</span></div>
+            <div class="conj-row"><span class="conj-pron">vosotros</span><span class="conj-form">sois</span></div>
+            <div class="conj-row"><span class="conj-pron">ellos/ustedes</span><span class="conj-form">son</span></div>
+          </div>
+          <div class="conj-box">
+            <div class="conj-box-header blue">ESTAR</div>
+            <div class="conj-row"><span class="conj-pron">yo</span><span class="conj-form">estoy</span></div>
+            <div class="conj-row"><span class="conj-pron">tú</span><span class="conj-form">estás</span></div>
+            <div class="conj-row"><span class="conj-pron">él/ella/usted</span><span class="conj-form">está</span></div>
+            <div class="conj-row"><span class="conj-pron">nosotros</span><span class="conj-form">estamos</span></div>
+            <div class="conj-row"><span class="conj-pron">vosotros</span><span class="conj-form">estáis</span></div>
+            <div class="conj-row"><span class="conj-pron">ellos/ustedes</span><span class="conj-form">están</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SER -->
+      <section id="ser" class="section">
+        <h2 class="section-title"><span class="ico">🔴</span> SER — Usos</h2>
+
+        <div class="card">
+          <ul class="use-list">
+            <li>
+              <span class="use-label red">Identidad</span>
+              <div class="use-body">
+                Nombre, profesión, nacionalidad, religión
+                <em>Soy María. Eres médico. Somos españoles.</em>
+              </div>
+            </li>
+            <li>
+              <span class="use-label red">Origen</span>
+              <div class="use-body">
+                De dónde eres o de dónde procede algo
+                <em>Soy de México. El vino es de La Rioja.</em>
+              </div>
+            </li>
+            <li>
+              <span class="use-label red">Material</span>
+              <div class="use-body">
+                De qué está hecho algo
+                <em>La silla es de madera. El anillo es de oro.</em>
+              </div>
+            </li>
+            <li>
+              <span class="use-label red">Posesión</span>
+              <div class="use-body">
+                A quién pertenece algo
+                <em>Este libro es de Ana. ¿De quién es este paraguas?</em>
+              </div>
+            </li>
+            <li>
+              <span class="use-label red">Características</span>
+              <div class="use-body">
+                Rasgos físicos o de personalidad inherentes
+                <em>Pedro es alto y simpático. El cielo es azul.</em>
+              </div>
+            </li>
+            <li>
+              <span class="use-label red">Relaciones</span>
+              <div class="use-body">
+                Parentesco o relaciones personales
+                <em>Ana es mi hermana. Felipe es el jefe.</em>
+              </div>
+            </li>
+            <li>
+              <span class="use-label red">Tiempo</span>
+              <div class="use-body">
+                Hora, fecha, día de la semana
+                <em>Son las tres. Hoy es lunes. Es el 5 de mayo.</em>
+              </div>
+            </li>
+            <li>
+              <span class="use-label red">Eventos</span>
+              <div class="use-body">
+                Dónde se celebra un evento (no la ubicación de una persona u objeto)
+                <em>La boda es en Valencia. El concierto es en el teatro.</em>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tip blue">
+          <span class="ti">🔍</span>
+          <div>
+            <strong>¡Atención con la profesión!</strong> Después de <em>ser</em>, el artículo se omite:<br>
+            ✓ <em>Soy médico.</em> &nbsp;✗ <em>Soy un médico.</em> — a menos que haya un adjetivo: <em>Soy un buen médico.</em>
+          </div>
+        </div>
+      </section>
+
+      <!-- ESTAR -->
+      <section id="estar" class="section">
+        <h2 class="section-title"><span class="ico">🔵</span> ESTAR — Usos</h2>
+
+        <div class="card">
+          <ul class="use-list">
+            <li>
+              <span class="use-label blue">Ubicación</span>
+              <div class="use-body">
+                Dónde se encuentra una persona, animal o cosa
+                <em>Estoy en casa. Las llaves están en la mesa. Madrid está en España.</em>
+              </div>
+            </li>
+            <li>
+              <span class="use-label blue">Salud</span>
+              <div class="use-body">
+                Estado de salud (temporal)
+                <em>Estoy enferma. ¿Cómo estás? — Estoy bien, gracias.</em>
+              </div>
+            </li>
+            <li>
+              <span class="use-label blue">Emociones</span>
+              <div class="use-body">
+                Estado emocional o de ánimo
+                <em>Estoy feliz. Están muy nerviosos. ¿Por qué estás triste?</em>
+              </div>
+            </li>
+            <li>
+              <span class="use-label blue">Gerundio</span>
+              <div class="use-body">
+                Acción en progreso (estar + -ando / -iendo)
+                <em>Estoy estudiando. ¿Qué estás haciendo?</em>
+              </div>
+            </li>
+            <li>
+              <span class="use-label blue">Resultado</span>
+              <div class="use-body">
+                Estado que resulta de una acción anterior
+                <em>La puerta está abierta. La cena está lista. El ordenador está roto.</em>
+              </div>
+            </li>
+            <li>
+              <span class="use-label blue">Apariencia</span>
+              <div class="use-body">
+                Cómo parece o luce algo en un momento concreto
+                <em>¡Qué guapa estás hoy! Esta sopa está riquísima.</em>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tip yellow">
+          <span class="ti">💡</span>
+          <span>
+            <strong>Muerto</strong> siempre va con <em>estar</em>: <em>El pez está muerto.</em> &nbsp;|&nbsp;
+            <strong>Casado/divorciado</strong> también: <em>Están casados desde 2010.</em>
+          </span>
+        </div>
+      </section>
+
+      <!-- ADJECTIVES THAT CHANGE MEANING -->
+      <section id="adjetivos" class="section">
+        <h2 class="section-title"><span class="ico">🔄</span> Adjetivos que Cambian de Significado</h2>
+
+        <p style="font-size:0.92rem; color:#6b7280; margin-bottom:24px; font-weight:600;">
+          Con <strong style="color:var(--red)">SER</strong> describen una <strong>característica inherente</strong>.
+          Con <strong style="color:var(--blue)">ESTAR</strong> describen un <strong>estado en ese momento</strong>.
+        </p>
+
+        <div class="adj-grid">
+
+          <div class="adj-card">
+            <div class="adj-card-head">BUENO / MALO</div>
+            <div class="adj-head-row">
+              <div class="adj-head-cell red">SER</div>
+              <div class="adj-head-cell blue">ESTAR</div>
+            </div>
+            <div class="adj-row">
+              <div class="adj-cell">
+                <div class="meaning">good person / bad person</div>
+                <em>Es buena persona. Es muy malo.</em>
+              </div>
+              <div class="adj-cell">
+                <div class="meaning">tasty / ill</div>
+                <em>¡Está buenísimo! Está mala (enferma).</em>
+              </div>
+            </div>
+          </div>
+
+          <div class="adj-card">
+            <div class="adj-card-head">LISTO / TONTO</div>
+            <div class="adj-head-row">
+              <div class="adj-head-cell red">SER</div>
+              <div class="adj-head-cell blue">ESTAR</div>
+            </div>
+            <div class="adj-row">
+              <div class="adj-cell">
+                <div class="meaning">clever / foolish</div>
+                <em>Es muy lista. Es un poco tonto.</em>
+              </div>
+              <div class="adj-cell">
+                <div class="meaning">ready / dazed</div>
+                <em>¿Estás listo? Estaba atontado.</em>
+              </div>
+            </div>
+          </div>
+
+          <div class="adj-card">
+            <div class="adj-card-head">RICO / POBRE</div>
+            <div class="adj-head-row">
+              <div class="adj-head-cell red">SER</div>
+              <div class="adj-head-cell blue">ESTAR</div>
+            </div>
+            <div class="adj-row">
+              <div class="adj-cell">
+                <div class="meaning">wealthy / poor</div>
+                <em>Es muy rica. Son pobres.</em>
+              </div>
+              <div class="adj-cell">
+                <div class="meaning">delicious / broke</div>
+                <em>¡Está riquísimo! Estoy muy pobre este mes.</em>
+              </div>
+            </div>
+          </div>
+
+          <div class="adj-card">
+            <div class="adj-card-head">ABURRIDO</div>
+            <div class="adj-head-row">
+              <div class="adj-head-cell red">SER</div>
+              <div class="adj-head-cell blue">ESTAR</div>
+            </div>
+            <div class="adj-row">
+              <div class="adj-cell">
+                <div class="meaning">boring (personality)</div>
+                <em>Es un poco aburrido.</em>
+              </div>
+              <div class="adj-cell">
+                <div class="meaning">bored (right now)</div>
+                <em>Estoy aburrida hoy.</em>
+              </div>
+            </div>
+          </div>
+
+          <div class="adj-card">
+            <div class="adj-card-head">SEGURO</div>
+            <div class="adj-head-row">
+              <div class="adj-head-cell red">SER</div>
+              <div class="adj-head-cell blue">ESTAR</div>
+            </div>
+            <div class="adj-row">
+              <div class="adj-cell">
+                <div class="meaning">safe (inherently)</div>
+                <em>Este barrio es muy seguro.</em>
+              </div>
+              <div class="adj-cell">
+                <div class="meaning">sure / certain</div>
+                <em>Estoy seguro de que es verdad.</em>
+              </div>
+            </div>
+          </div>
+
+          <div class="adj-card">
+            <div class="adj-card-head">VIVO / MUERTO</div>
+            <div class="adj-head-row">
+              <div class="adj-head-cell red">SER</div>
+              <div class="adj-head-cell blue">ESTAR</div>
+            </div>
+            <div class="adj-row">
+              <div class="adj-cell">
+                <div class="meaning">sharp / clever</div>
+                <em>Es muy vivo para los negocios.</em>
+              </div>
+              <div class="adj-cell">
+                <div class="meaning">alive / dead</div>
+                <em>El pez está vivo. La planta está muerta.</em>
+              </div>
+            </div>
+          </div>
+
+          <div class="adj-card">
+            <div class="adj-card-head">ABIERTO / CERRADO</div>
+            <div class="adj-head-row">
+              <div class="adj-head-cell red">SER</div>
+              <div class="adj-head-cell blue">ESTAR</div>
+            </div>
+            <div class="adj-row">
+              <div class="adj-cell">
+                <div class="meaning">open-minded / reserved</div>
+                <em>Es una persona muy abierta.</em>
+              </div>
+              <div class="adj-cell">
+                <div class="meaning">open / closed (state)</div>
+                <em>La tienda está cerrada los domingos.</em>
+              </div>
+            </div>
+          </div>
+
+          <div class="adj-card">
+            <div class="adj-card-head">INTERESADO</div>
+            <div class="adj-head-row">
+              <div class="adj-head-cell red">SER</div>
+              <div class="adj-head-cell blue">ESTAR</div>
+            </div>
+            <div class="adj-row">
+              <div class="adj-cell">
+                <div class="meaning">self-interested / greedy</div>
+                <em>Es muy interesado — solo piensa en el dinero.</em>
+              </div>
+              <div class="adj-cell">
+                <div class="meaning">interested in sth</div>
+                <em>Estoy interesada en ese curso.</em>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- RESUMEN -->
+      <section id="resumen" class="section">
+        <h2 class="section-title"><span class="ico">📋</span> Resumen — SER vs ESTAR</h2>
+
+        <div class="tbl-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Uso</th>
+                <th class="th-orange" style="background:var(--red)!important">SER</th>
+                <th class="th-blue">ESTAR</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Identidad/nombre</strong></td>
+                <td>✅ <em>Soy Carlos.</em></td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><strong>Origen</strong></td>
+                <td>✅ <em>Es de Francia.</em></td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><strong>Profesión</strong></td>
+                <td>✅ <em>Es profesora.</em></td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><strong>Características físicas/personalidad</strong></td>
+                <td>✅ <em>Es alto y simpático.</em></td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><strong>Material</strong></td>
+                <td>✅ <em>Es de madera.</em></td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><strong>Hora / fecha / día</strong></td>
+                <td>✅ <em>Son las 5. Es lunes.</em></td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><strong>Ubicación de persona/cosa</strong></td>
+                <td>—</td>
+                <td>✅ <em>Estoy en Madrid.</em></td>
+              </tr>
+              <tr>
+                <td><strong>Ubicación de evento</strong></td>
+                <td>✅ <em>La fiesta es en mi casa.</em></td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><strong>Estado de salud</strong></td>
+                <td>—</td>
+                <td>✅ <em>Estoy enferma.</em></td>
+              </tr>
+              <tr>
+                <td><strong>Estado emocional</strong></td>
+                <td>—</td>
+                <td>✅ <em>Estoy muy feliz.</em></td>
+              </tr>
+              <tr>
+                <td><strong>Acción en progreso</strong></td>
+                <td>—</td>
+                <td>✅ <em>Estoy comiendo.</em></td>
+              </tr>
+              <tr>
+                <td><strong>Resultado de acción</strong></td>
+                <td>—</td>
+                <td>✅ <em>La puerta está abierta.</em></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </div><!-- /.content -->
+  </main>
+</div><!-- /.app-body -->
+
+<footer>
+  <p>Gramática Española · <a href="index.html">Volver al inicio</a></p>
+</footer>
+
+<script src="nav.js"></script>
+<script src="main.js"></script>
+<script>buildSidebar('ser-estar');</script>
+</body>
+</html>
