@@ -6,7 +6,7 @@ const GRAMMAR_NAV = [
       { id: 'ser-estar',     label: 'Ser y Estar',        href: 'ser-estar.html',     icon: '🔀', available: true  },
       { id: 'preposiciones', label: 'Preposiciones',      href: 'preposiciones.html', icon: '📍', available: true  },
       { id: 'articulos',     label: 'Artículos',          href: 'articulos.html',     icon: '📝', available: true  },
-      { id: 'sustantivos',   label: 'Sustantivos',        href: '#',                  icon: '🏷️', available: false },
+      { id: 'sustantivos',   label: 'Sustantivos',        href: 'sustantivos.html',   icon: '🏷️', level: 'A1–A2', available: true  },
       { id: 'pronombres',    label: 'Pronombres',         href: '#',                  icon: '👤', available: false },
       { id: 'adjetivos',     label: 'Adjetivos',          href: '#',                  icon: '✨', available: false },
       { id: 'adverbios',     label: 'Adverbios',          href: '#',                  icon: '🔄', available: false },
