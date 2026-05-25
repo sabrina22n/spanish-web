@@ -486,7 +486,7 @@ body { font-family: 'Nunito', system-ui, sans-serif; background: var(--body-bg);
   padding: 5px 10px;
   border: 2px solid #d1d5db;
   border-radius: 8px;
-  width: 88px;
+  width: 110px;
   text-align: center;
   color: var(--dark);
   transition: border-color 0.18s, background 0.18s;
@@ -497,6 +497,20 @@ body { font-family: 'Nunito', system-ui, sans-serif; background: var(--body-bg);
 .fill-input:focus     { border-color: var(--blue); }
 .fill-input.correct   { border-color: var(--green); background: #f0fdf4; color: #166534; }
 .fill-input.incorrect { border-color: var(--red);   background: #fff1f2; color: #9f1239; }
+
+.fi-num {
+  font-weight: 800;
+  color: #6b7280;
+  margin-right: 4px;
+  font-style: normal;
+}
+
+.fi-options {
+  color: #9ca3af;
+  font-size: 0.85em;
+  font-style: normal;
+  margin-left: 6px;
+}
 
 .fill-hint {
   display: none;
