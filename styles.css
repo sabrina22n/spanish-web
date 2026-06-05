@@ -381,8 +381,8 @@ body { font-family: 'Nunito', system-ui, sans-serif; background: var(--body-bg);
 .tbl-card tr:last-child td { border-bottom: none; }
 .tbl-card tr:nth-child(even) td { background: #f9fafb; }
 
-.th-orange { background: var(--orange) !important; }
-.th-blue   { background: var(--blue)   !important; }
+.th-orange { background: var(--orange) !important; width: 50%; }
+.th-blue   { background: var(--blue)   !important; width: 50%; }
 
 /* ============================================================
    INLINE TAG (summary table)
