@@ -6,12 +6,11 @@ const GRAMMAR_NAV = [
       { id: 'ser-estar',     label: 'Ser y Estar',        href: 'ser-estar.html',     icon: '🔀', available: true  },
       { id: 'preposiciones', label: 'Preposiciones',      href: 'preposiciones.html', icon: '📍', available: true  },
       { id: 'articulos',     label: 'Artículos',          href: 'articulos.html',     icon: '📝', available: true  },
-      { id: 'sustantivos',   label: 'Sustantivos',        href: 'sustantivos.html',   icon: '🏷️', level: 'A1–A2', available: true  },
+      { id: 'sustantivos',   label: 'Sustantivos',        href: 'sustantivos.html',   icon: '🏷️', available: true  },
       { id: 'pronombres',    label: 'Pronombres',         href: '#',                  icon: '👤', available: false },
       { id: 'adjetivos',     label: 'Adjetivos',          href: '#',                  icon: '✨', available: false },
       { id: 'adverbios',     label: 'Adverbios',          href: '#',                  icon: '🔄', available: false },
       { id: 'conectores',    label: 'Conectores',         href: '#',                  icon: '🔗', available: false },
-      { id: 'subjuntivo',    label: 'Subjuntivo',         href: '#',                  icon: '🌀', available: false },
     ]
   }
 ];
@@ -20,6 +19,10 @@ function buildSidebar(activeId) {
   const nav = document.getElementById('sidebar-nav');
   if (!nav) return;
 
+  const inPages = location.pathname.includes('/paginas/');
+  const homeHref = inPages ? '../index.html' : 'index.html';
+  const pageBase = inPages ? '' : 'paginas/';
+
   const isHome = activeId === 'home';
   let html = `
     <div class="sidebar-header">
@@ -27,10 +30,10 @@ function buildSidebar(activeId) {
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="15 18 9 12 15 6"></polyline>
         </svg>
-        
+
       </button>
     </div>
-    <a href="index.html" class="sidebar-home-link${isHome ? ' active' : ''}">
+    <a href="${homeHref}" class="sidebar-home-link${isHome ? ' active' : ''}">
       <span>🏠</span><span>Inicio</span>
     </a>`;
 
@@ -39,7 +42,7 @@ function buildSidebar(activeId) {
     group.items.forEach(item => {
       const isActive = item.id === activeId;
       if (item.available) {
-        html += `<a href="${item.href}" class="sidebar-link${isActive ? ' active' : ''}">
+        html += `<a href="${pageBase}${item.href}" class="sidebar-link${isActive ? ' active' : ''}">
           <span class="sidebar-icon">${item.icon}</span>
           <span>${item.label}</span>
         </a>`;

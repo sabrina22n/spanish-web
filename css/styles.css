@@ -968,6 +968,166 @@ footer a:hover { color: white; }
 .conj-end  { color: var(--red); font-weight: 900; }
 
 /* ============================================================
+   IRREGULAR MINI GRID (verb conjugation quick reference)
+   ============================================================ */
+.irr-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.irr-box {
+  background: white;
+  border-radius: 14px;
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+}
+.irr-box-head {
+  padding: 8px 14px;
+  font-weight: 900;
+  font-size: 0.85rem;
+  color: white;
+  background: var(--dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.irr-box-head span { font-size: 0.68rem; opacity: 0.7; font-weight: 600; }
+.irr-mini-row {
+  display: flex;
+  gap: 8px;
+  padding: 5px 14px;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 0.8rem;
+}
+.irr-mini-row:last-child { border-bottom: none; }
+.irr-mini-pron { color: #9ca3af; font-weight: 600; width: 70px; flex-shrink: 0; font-size: 0.74rem; }
+.irr-mini-form { font-weight: 700; }
+
+/* ============================================================
+   VS CARD (two-column comparison / imperative table)
+   ============================================================ */
+.vs-card {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.vs-header { display: grid; grid-template-columns: 1fr 1fr; }
+.vs-col-head {
+  padding: 14px 20px;
+  font-weight: 900;
+  font-size: 0.9rem;
+  color: white;
+  text-align: center;
+}
+.vs-col-head.orange { background: var(--orange); }
+.vs-col-head.teal   { background: var(--teal); }
+.vs-col-head.green  { background: var(--green); }
+.vs-col-head.red    { background: var(--red); }
+.vs-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #f3f4f6;
+}
+.vs-row:last-child { border-bottom: none; }
+.vs-cell { padding: 12px 20px; font-size: 0.85rem; line-height: 1.4; }
+.vs-cell:first-child { border-right: 2px solid #f3f4f6; }
+.vs-cell em { color: #374151; display: block; margin-top: 4px; }
+.vs-cell strong { color: var(--dark); }
+
+/* ============================================================
+   MOOD BANNER (Indicativo / Subjuntivo / Imperativo intros)
+   ============================================================ */
+.mood-banner {
+  border-radius: var(--radius);
+  padding: 26px 30px;
+  margin-bottom: 24px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.mood-banner .mb-icon { font-size: 2.3rem; flex-shrink: 0; }
+.mood-banner h2 { font-size: 1.4rem; font-weight: 900; margin-bottom: 4px; }
+.mood-banner p { font-size: 0.86rem; opacity: 0.92; line-height: 1.45; }
+.mood-banner.mood-indicativo { background: linear-gradient(135deg, var(--red) 0%, #b02233 100%); }
+.mood-banner.mood-subjuntivo { background: linear-gradient(135deg, var(--purple) 0%, #5b21b6 100%); }
+.mood-banner.mood-imperativo { background: linear-gradient(135deg, var(--teal) 0%, #0369a1 100%); }
+.mood-group { margin-bottom: 56px; }
+
+/* ============================================================
+   TENSE PILLS (quick-jump within a mood)
+   ============================================================ */
+.tense-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+.tense-pill {
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 100px;
+  padding: 7px 16px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #374151;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.tense-pill:hover { border-color: var(--red); color: var(--red); }
+
+/* ============================================================
+   COMPOUND-TENSE PARADIGM BOX (haber + participio, ir a + inf.)
+   ============================================================ */
+.compound-box {
+  background: white;
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  margin-bottom: 20px;
+  max-width: 420px;
+}
+
+/* ============================================================
+   BREADCRUMB
+   ============================================================ */
+.breadcrumb {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #9ca3af;
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: #6b7280; text-decoration: none; }
+.breadcrumb a:hover { color: var(--red); }
+.breadcrumb .sep { margin: 0 8px; color: #d1d5db; }
+
+/* ============================================================
+   TENSE PREV/NEXT NAV
+   ============================================================ */
+.tense-nav { display: flex; justify-content: space-between; gap: 16px; margin-top: 40px; }
+.tense-nav a {
+  flex: 1;
+  background: white;
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  padding: 16px 20px;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: transform 0.15s;
+}
+.tense-nav a:hover { transform: translateY(-2px); }
+.tense-nav .tn-next { text-align: right; }
+.tense-nav .tn-label {
+  display: block;
+  font-size: 0.68rem;
+  color: #9ca3af;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width: 768px) {
@@ -989,4 +1149,9 @@ footer a:hover { color: white; }
   .home-content { padding: 24px 20px; }
   .conj-grid { grid-template-columns: 1fr; }
   .topic-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+  .vs-header, .vs-row { grid-template-columns: 1fr; }
+  .vs-cell:first-child { border-right: none; border-bottom: 2px solid #f3f4f6; }
+  .mood-banner { flex-direction: column; text-align: center; }
+  .tense-nav { flex-direction: column; }
+  .tense-nav .tn-next { text-align: left; }
 }
