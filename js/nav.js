@@ -3,6 +3,7 @@ const GRAMMAR_NAV = [
     section: 'Gramática',
     items: [
       { id: 'verbos',        label: 'Tiempos verbales',  href: 'verbos.html',        icon: '⏰', available: true  },
+      { id: 'verbos-formas', label: 'Verbos',             href: 'verbos-formas.html', icon: '🎬', available: true  },
       { id: 'ser-estar',     label: 'Ser y Estar',        href: 'ser-estar.html',     icon: '🔀', available: true  },
       { id: 'preposiciones', label: 'Preposiciones',      href: 'preposiciones.html', icon: '📍', available: true  },
       { id: 'articulos',     label: 'Artículos',          href: 'articulos.html',     icon: '📝', available: true  },

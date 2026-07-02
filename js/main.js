@@ -55,6 +55,40 @@
     });
   });
 
+  // Multiple-choice exercises
+  document.querySelectorAll('.mc-group').forEach(group => {
+    group.querySelectorAll('.mc-option').forEach(opt => {
+      opt.addEventListener('click', () => {
+        const item = opt.closest('.mc-item');
+        item.querySelectorAll('.mc-option').forEach(o => o.classList.remove('selected'));
+        opt.classList.add('selected');
+      });
+    });
+
+    group.querySelector('.mc-check').addEventListener('click', () => {
+      let correct = 0, total = 0;
+      group.querySelectorAll('.mc-item').forEach(item => {
+        const answer   = item.dataset.answer;
+        const selected = item.querySelector('.mc-option.selected');
+        item.querySelectorAll('.mc-option').forEach(o => {
+          o.classList.remove('correct', 'incorrect');
+          if (o.dataset.value === answer) o.classList.add('correct');
+          else if (o === selected)        o.classList.add('incorrect');
+        });
+        if (selected && selected.dataset.value === answer) correct++;
+        total++;
+      });
+      updateScore(group.querySelector('.mc-score'), correct, total);
+    });
+
+    group.querySelector('.mc-reset').addEventListener('click', () => {
+      group.querySelectorAll('.mc-option').forEach(o => o.classList.remove('selected', 'correct', 'incorrect'));
+      const sc = group.querySelector('.mc-score');
+      sc.textContent = '';
+      sc.className = 'mc-score';
+    });
+  });
+
   // Drag & Drop exercises
   document.querySelectorAll('.dnd-group').forEach(group => {
     const bank = group.querySelector('.dnd-bank');
