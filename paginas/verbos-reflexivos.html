@@ -180,6 +180,199 @@
         </div>
       </section>
 
+      <section id="ejercicios" class="section">
+        <h2 class="section-title"><span class="ico">✏️</span> Ejercicios</h2>
+
+        <div class="ex-tabs">
+          <button class="ex-tab active" data-group="opcion">🔘 Opción múltiple</button>
+          <button class="ex-tab" data-group="completar">✍️ Completar</button>
+          <button class="ex-tab" data-group="historia">📖 Historia</button>
+        </div>
+
+        <!-- ═════ OPCIÓN MÚLTIPLE ═════ -->
+        <div id="ex-opcion" class="ex-panel active">
+          <div class="mc-group">
+            <div class="mc-list">
+              <div class="mc-item" data-answer="b">
+                <div class="mc-sentence"><span class="fi-num">1.</span> Yo ___ ducho por la mañana.</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">te</button>
+                  <button class="mc-option" data-value="b">me</button>
+                  <button class="mc-option" data-value="c">se</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="c">
+                <div class="mc-sentence"><span class="fi-num">2.</span> ¿Cómo ___ llamas?</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">me</button>
+                  <button class="mc-option" data-value="b">se</button>
+                  <button class="mc-option" data-value="c">te</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="a">
+                <div class="mc-sentence"><span class="fi-num">3.</span> ¡No ___ quedes atrás!</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">te</button>
+                  <button class="mc-option" data-value="b">ti</button>
+                  <button class="mc-option" data-value="c">tú</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="b">
+                <div class="mc-sentence"><span class="fi-num">4.</span> ¡Levánta___ , llegamos tarde!</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">se</button>
+                  <button class="mc-option" data-value="b">te</button>
+                  <button class="mc-option" data-value="c">me</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="a">
+                <div class="mc-sentence"><span class="fi-num">5.</span> Nosotros ___ vamos a tomar un café. / Vamos a tomar___ un café.</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">nos / nos</button>
+                  <button class="mc-option" data-value="b">se / se</button>
+                  <button class="mc-option" data-value="c">nos / se</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="c">
+                <div class="mc-sentence"><span class="fi-num">6.</span> Me gusta enterar___ de los cotilleos.</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">se</button>
+                  <button class="mc-option" data-value="b">te</button>
+                  <button class="mc-option" data-value="c">me</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="b">
+                <div class="mc-sentence"><span class="fi-num">7.</span> Mis abuelos ___ quieren mucho. (el uno al otro)</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">les</button>
+                  <button class="mc-option" data-value="b">se</button>
+                  <button class="mc-option" data-value="c">los</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="a">
+                <div class="mc-sentence"><span class="fi-num">8.</span> Juan ___ fue de la fiesta sin despedirse.</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">se</button>
+                  <button class="mc-option" data-value="b">lo</button>
+                  <button class="mc-option" data-value="c">le</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="b">
+                <div class="mc-sentence"><span class="fi-num">9.</span> Ella ___ siente cansada después del examen.</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">le</button>
+                  <button class="mc-option" data-value="b">se</button>
+                  <button class="mc-option" data-value="c">la</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="a">
+                <div class="mc-sentence"><span class="fi-num">10.</span> Ustedes ___ preocupan demasiado por todo.</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">se</button>
+                  <button class="mc-option" data-value="b">les</button>
+                  <button class="mc-option" data-value="c">los</button>
+                </div>
+              </div>
+            </div>
+            <div class="ex-actions">
+              <button class="mc-check ex-btn ex-btn--primary">Verificar</button>
+              <button class="mc-reset ex-btn ex-btn--ghost">Reiniciar</button>
+              <span class="mc-score"></span>
+            </div>
+          </div>
+        </div><!-- /ex-opcion -->
+
+        <!-- ═════ COMPLETAR ═════ -->
+        <div id="ex-completar" class="ex-panel">
+          <div class="fill-group">
+            <div class="fill-list">
+              <div class="fill-item" data-answer="me despierto">
+                <div class="fi-sentence"><span class="fi-num">1.</span> Yo <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> a las siete. <span class="fi-options">(despertarse)</span></div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="te vistes">
+                <div class="fi-sentence"><span class="fi-num">2.</span> Tú <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> muy rápido por las mañanas. <span class="fi-options">(vestirse)</span></div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="se peina">
+                <div class="fi-sentence"><span class="fi-num">3.</span> Ella <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> frente al espejo. <span class="fi-options">(peinarse)</span></div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="nos sentamos">
+                <div class="fi-sentence"><span class="fi-num">4.</span> Nosotros <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> a la mesa para cenar. <span class="fi-options">(sentarse)</span></div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="se aburren">
+                <div class="fi-sentence"><span class="fi-num">5.</span> Ustedes <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> los domingos por la tarde. <span class="fi-options">(aburrirse)</span></div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="se enamoraron">
+                <div class="fi-sentence"><span class="fi-num">6.</span> Ellos <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> el verano pasado. <span class="fi-options">(enamorarse)</span></div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="me acuesto">
+                <div class="fi-sentence"><span class="fi-num">7.</span> Los fines de semana yo <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> muy tarde. <span class="fi-options">(acostarse)</span></div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="se queja">
+                <div class="fi-sentence"><span class="fi-num">8.</span> Mi hermano siempre <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> de todo. <span class="fi-options">(quejarse)</span></div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="te afeitas">
+                <div class="fi-sentence"><span class="fi-num">9.</span> ¿Tú <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> cada día? <span class="fi-options">(afeitarse)</span></div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="nos llamamos">
+                <div class="fi-sentence"><span class="fi-num">10.</span> Nosotras <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> Ana y Laura. <span class="fi-options">(llamarse)</span></div>
+                <span class="fill-hint"></span>
+              </div>
+            </div>
+            <div class="ex-actions">
+              <button class="fill-check ex-btn ex-btn--primary">Verificar</button>
+              <button class="fill-reset ex-btn ex-btn--ghost">Reiniciar</button>
+              <span class="fill-score"></span>
+            </div>
+          </div>
+        </div><!-- /ex-completar -->
+
+        <!-- ═════ HISTORIA ═════ -->
+        <div id="ex-historia" class="ex-panel">
+          <div class="fill-group">
+            <div class="story-text">
+              Todos los días yo
+              <span class="fill-item" data-answer="me despierto"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(despertarse)</span>
+              a las seis y media. Primero
+              <span class="fill-item" data-answer="me ducho"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(ducharse)</span>
+              con agua fría para despejarme y después
+              <span class="fill-item" data-answer="me visto"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(vestirse)</span>
+              deprisa. Mi hermana, en cambio,
+              <span class="fill-item" data-answer="se peina"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(peinarse)</span>
+              con mucha calma frente al espejo y nunca
+              <span class="fill-item" data-answer="se preocupa"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(preocuparse)</span>
+              por llegar tarde. Mis padres
+              <span class="fill-item" data-answer="se levantan"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(levantarse)</span>
+              antes que nosotros y, cuando bajamos a desayunar, ya
+              <span class="fill-item" data-answer="se han duchado"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(ducharse, pretérito perfecto)</span>.
+              Por la noche, toda la familia
+              <span class="fill-item" data-answer="se acuesta"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(acostarse)</span>
+              pronto, aunque a veces yo
+              <span class="fill-item" data-answer="me quedo"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(quedarse)</span>
+              leyendo un rato más. Antes de dormir, siempre
+              <span class="fill-item" data-answer="me cepillo"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(cepillarse)</span>
+              los dientes y
+              <span class="fill-item" data-answer="me relajo"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(relajarse)</span>
+              pensando en el día siguiente.
+            </div>
+            <div class="ex-actions">
+              <button class="fill-check ex-btn ex-btn--primary">Verificar</button>
+              <button class="fill-reset ex-btn ex-btn--ghost">Reiniciar</button>
+              <span class="fill-score"></span>
+            </div>
+          </div>
+        </div><!-- /ex-historia -->
+
+      </section>
+
       <div class="tense-nav"><a href="gerundio.html"><span class="tn-label">← Anterior</span>Gerundio</a><a href="voz-pasiva.html" class="tn-next"><span class="tn-label">Siguiente →</span>Voz Pasiva</a></div>
 
     </div><!-- /.content -->
