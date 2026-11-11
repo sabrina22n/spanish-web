@@ -1034,6 +1034,16 @@ footer a:hover { color: white; }
 .hl-raiz  { color: var(--green); font-weight: 900; }
 .hl-tense { color: var(--purple); font-weight: 900; }
 
+/* Stem-change colors (match .tag--* colors) */
+.hl-orange { color: var(--orange); font-weight: 900; }
+.hl-blue   { color: var(--blue);   font-weight: 900; }
+.hl-purple { color: var(--purple); font-weight: 900; }
+.hl-green  { color: var(--green);  font-weight: 900; }
+.tbl-card th.th-c-orange { background: var(--orange); }
+.tbl-card th.th-c-blue   { background: var(--blue); }
+.tbl-card th.th-c-purple { background: var(--purple); }
+.tbl-card th.th-c-green  { background: var(--green); }
+
 /* ============================================================
    EXAMPLE STORY (intro text showcasing a tense in context)
    ============================================================ */
