@@ -8,7 +8,7 @@ const GRAMMAR_NAV = [
       { id: 'preposiciones', label: 'Preposiciones',      href: 'preposiciones.html', icon: '📍', available: true  },
       { id: 'articulos',     label: 'Artículos',          href: 'articulos.html',     icon: '📝', available: true  },
       { id: 'sustantivos',   label: 'Sustantivos',        href: 'sustantivos.html',   icon: '🏷️', available: true  },
-      { id: 'pronombres',    label: 'Pronombres',         href: '#',                  icon: '👤', available: false },
+      { id: 'pronombres',    label: 'Pronombres',         href: 'pronombres.html',    icon: '👤', available: true  },
       { id: 'adjetivos',     label: 'Adjetivos',          href: '#',                  icon: '✨', available: false },
       { id: 'adverbios',     label: 'Adverbios',          href: '#',                  icon: '🔄', available: false },
       { id: 'conectores',    label: 'Conectores',         href: '#',                  icon: '🔗', available: false },
