@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /private/tmp/claude-501/-Users-sabrinanunez-Documents-WEBDEV-REPOS-spanish-web/92c89a82-0ebd-4bb2-963a-479241db6154/scratchpad)",
+      "Bash(python3 -I - /private/tmp/claude-501/-Users-sabrinanunez-Documents-WEBDEV-REPOS-spanish-web/92c89a82-0ebd-4bb2-963a-479241db6154/scratchpad/gen3.py /private/tmp/claude-501/-Users-sabrinanunez-Documents-WEBDEV-REPOS-spanish-web/92c89a82-0ebd-4bb2-963a-479241db6154/scratchpad/gen5.py)",
+      "Bash(python3 -I /private/tmp/claude-501/-Users-sabrinanunez-Documents-WEBDEV-REPOS-spanish-web/92c89a82-0ebd-4bb2-963a-479241db6154/scratchpad/gen5.py)",
+      "Bash(python3 -I - /private/tmp/claude-501/-Users-sabrinanunez-Documents-WEBDEV-REPOS-spanish-web/92c89a82-0ebd-4bb2-963a-479241db6154/scratchpad/gen6.py /private/tmp/claude-501/-Users-sabrinanunez-Documents-WEBDEV-REPOS-spanish-web/92c89a82-0ebd-4bb2-963a-479241db6154/scratchpad/gen7.py)",
+      "Bash(python3 -I /private/tmp/claude-501/-Users-sabrinanunez-Documents-WEBDEV-REPOS-spanish-web/92c89a82-0ebd-4bb2-963a-479241db6154/scratchpad/gen7.py)",
+      "Bash(python3 -I /private/tmp/claude-501/-Users-sabrinanunez-Documents-WEBDEV-REPOS-spanish-web/92c89a82-0ebd-4bb2-963a-479241db6154/scratchpad/rebuild.py)",
+      "Bash(python3 -I -c ' *)"
+    ]
+  }
+}
