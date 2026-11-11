@@ -582,6 +582,14 @@ body { font-family: 'Nunito', system-ui, sans-serif; background: var(--body-bg);
   width: 160px;
 }
 
+.time-marker {
+  background: #fef3c7;
+  color: #92400e;
+  font-weight: 800;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+
 /* --- D&D group --- */
 .dnd-group {
   background: white;
@@ -1123,6 +1131,21 @@ footer a:hover { color: white; }
 .vs-cell em { color: #374151; display: block; margin-top: 4px; }
 .vs-cell strong { color: var(--dark); }
 
+/* Three-column variant (e.g. Indefinido vs Imperfecto vs Perfecto) */
+.vs-col-head.blue { background: var(--blue); }
+.vs-card.three .vs-header,
+.vs-card.three .vs-row { grid-template-columns: 1fr 1fr 1fr; }
+.vs-card.three .vs-cell:nth-child(2) { border-right: 2px solid #f3f4f6; }
+
+/* Four-column variant (adds Pluscuamperfecto) */
+.vs-col-head.purple { background: var(--purple); }
+.vs-card.four .vs-header,
+.vs-card.four .vs-row { grid-template-columns: repeat(4, 1fr); }
+.vs-card.four .vs-col-head,
+.vs-card.four .vs-cell { padding-left: 14px; padding-right: 14px; }
+.vs-card.four .vs-cell:nth-child(2),
+.vs-card.four .vs-cell:nth-child(3) { border-right: 2px solid #f3f4f6; }
+
 /* ============================================================
    MOOD BANNER (Indicativo / Subjuntivo / Imperativo intros)
    ============================================================ */
@@ -1237,6 +1260,16 @@ footer a:hover { color: white; }
   .topic-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
   .vs-header, .vs-row { grid-template-columns: 1fr; }
   .vs-cell:first-child { border-right: none; border-bottom: 2px solid #f3f4f6; }
+  .vs-card.three .vs-header, .vs-card.three .vs-row,
+  .vs-card.four .vs-header, .vs-card.four .vs-row { grid-template-columns: 1fr; }
+  .vs-card.three .vs-cell,
+  .vs-card.four .vs-cell { border-right: none; border-bottom: 2px solid #f3f4f6; border-left: 5px solid transparent; }
+  .vs-card.three .vs-cell:nth-child(1), .vs-card.four .vs-cell:nth-child(1) { border-left-color: var(--red); }
+  .vs-card.three .vs-cell:nth-child(2), .vs-card.four .vs-cell:nth-child(2) { border-left-color: var(--orange); }
+  .vs-card.three .vs-cell:nth-child(3), .vs-card.four .vs-cell:nth-child(3) { border-left-color: var(--blue); }
+  .vs-card.four .vs-cell:nth-child(4) { border-left-color: var(--purple); }
+  .vs-card.three .vs-cell:nth-child(3),
+  .vs-card.four .vs-cell:nth-child(4) { border-bottom: none; }
   .mood-banner { flex-direction: column; text-align: center; }
   .tense-nav { flex-direction: column; }
   .tense-nav .tn-next { text-align: left; }
