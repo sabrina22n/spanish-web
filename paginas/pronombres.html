@@ -31,7 +31,6 @@
         <li><a href="#sujeto">👤 Sujeto</a></li>
         <li><a href="#vos">🧉 Tú y Vos</a></li>
         <li><a href="#ustedes">👥 Vosotros y Ustedes</a></li>
-        <li><a href="#preposicion">➡️ Con preposición</a></li>
         <li><a href="#ejercicios">✏️ Ejercicios</a></li>
       </ul>
     </nav>
@@ -273,38 +272,288 @@
         <h2 class="section-title"><span class="ico">✏️</span> Ejercicios</h2>
 
         <div class="ex-tabs">
-          <button class="ex-tab active" data-group="voseo">🧉 Tú → Vos</button>
-          <button class="ex-tab" data-group="opcion">🔘 Opción múltiple</button>
+          <button class="ex-tab active" data-group="pronombres">👤 Pronombres personales</button>
+          <button class="ex-tab" data-group="variantes">🧉 Tú/Vos · Ustedes/Vosotros</button>
         </div>
 
-        <!-- ═════ VOSEO ═════ -->
-        <div id="ex-voseo" class="ex-panel active">
+        <!-- ═════ PRONOMBRES PERSONALES (sin vos ni vosotros) ═════ -->
+        <div id="ex-pronombres" class="ex-panel active">
+
+          <div class="mc-group">
+            <h3 class="ex-section-label">🔘 ¿Qué pronombre es? Elige según el significado</h3>
+            <div class="mc-list">
+              <div class="mc-item" data-answer="a">
+                <div class="mc-sentence"><span class="fi-num">1.</span> Hablo de mí mismo/a.</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">yo</button>
+                  <button class="mc-option" data-value="b">tú</button>
+                  <button class="mc-option" data-value="c">él</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="b">
+                <div class="mc-sentence"><span class="fi-num">2.</span> Hablo directamente con mi amigo.</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">él</button>
+                  <button class="mc-option" data-value="b">tú</button>
+                  <button class="mc-option" data-value="c">yo</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="c">
+                <div class="mc-sentence"><span class="fi-num">3.</span> Hablo <em>de</em> María (ella no está en la conversación).</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">tú</button>
+                  <button class="mc-option" data-value="b">usted</button>
+                  <button class="mc-option" data-value="c">ella</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="c">
+                <div class="mc-sentence"><span class="fi-num">4.</span> Hablo con una señora mayor que no conozco.</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">ella</button>
+                  <button class="mc-option" data-value="b">tú</button>
+                  <button class="mc-option" data-value="c">usted</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="a">
+                <div class="mc-sentence"><span class="fi-num">5.</span> Hablo de mi hermano y de mí.</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">nosotros</button>
+                  <button class="mc-option" data-value="b">ellos</button>
+                  <button class="mc-option" data-value="c">ustedes</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="b">
+                <div class="mc-sentence"><span class="fi-num">6.</span> Hablo directamente con mis compañeros de clase.</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">ellos</button>
+                  <button class="mc-option" data-value="b">ustedes</button>
+                  <button class="mc-option" data-value="c">nosotros</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="a">
+                <div class="mc-sentence"><span class="fi-num">7.</span> Hablo <em>de</em> Ana y Pedro (no están aquí).</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">ellos</button>
+                  <button class="mc-option" data-value="b">ellas</button>
+                  <button class="mc-option" data-value="c">ustedes</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="c">
+                <div class="mc-sentence"><span class="fi-num">8.</span> Hablo <em>de</em> Lucía y Sofía.</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">ellos</button>
+                  <button class="mc-option" data-value="b">nosotras</button>
+                  <button class="mc-option" data-value="c">ellas</button>
+                </div>
+              </div>
+            </div>
+            <div class="ex-actions">
+              <button class="mc-check ex-btn ex-btn--primary">Verificar</button>
+              <button class="mc-reset ex-btn ex-btn--ghost">Reiniciar</button>
+              <span class="mc-score"></span>
+            </div>
+          </div>
+
+          <hr class="dotted">
+
+          <div class="fill-group">
+            <h3 class="ex-section-label">✍️ Cambia las palabras en negrita por un pronombre</h3>
+            <div class="fill-list">
+              <div class="fill-item" data-answer="él">
+                <div class="fi-sentence">1. <strong>Carlos</strong> trabaja en un banco. → <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> trabaja en un banco.</div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="nosotros">
+                <div class="fi-sentence">2. <strong>Mi familia y yo</strong> vivimos en Lima. → <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> vivimos en Lima.</div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="ellas">
+                <div class="fi-sentence">3. <strong>Laura y Marta</strong> bailan salsa. → <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> bailan salsa.</div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="ustedes">
+                <div class="fi-sentence">4. <strong>Tú y Juan</strong> son muy simpáticos. → <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> son muy simpáticos.</div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="ella">
+                <div class="fi-sentence">5. <strong>La profesora</strong> explica la lección. → <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> explica la lección.</div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="ellos">
+                <div class="fi-sentence">6. <strong>Mis padres</strong> viajan mucho. → <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> viajan mucho.</div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="nosotras">
+                <div class="fi-sentence">7. <strong>Mi hermana y yo</strong> estudiamos juntas. → <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> estudiamos juntas.</div>
+                <span class="fill-hint"></span>
+              </div>
+            </div>
+            <div class="ex-actions">
+              <button class="fill-check ex-btn ex-btn--primary">Verificar</button>
+              <button class="fill-reset ex-btn ex-btn--ghost">Reiniciar</button>
+              <span class="fill-score"></span>
+            </div>
+          </div>
+
+          <hr class="dotted">
+
+          <div class="dnd-group">
+            <h3 class="ex-section-label">🖱️ Arrastra el pronombre correcto (mira el verbo)</h3>
+            <div class="dnd-bank">
+              <span class="tile" id="tile-p-nosotros" draggable="true" data-word="nosotros">NOSOTROS</span>
+              <span class="tile" id="tile-p-yo"       draggable="true" data-word="yo">YO</span>
+              <span class="tile" id="tile-p-ustedes"  draggable="true" data-word="ustedes">USTEDES</span>
+              <span class="tile" id="tile-p-tu"       draggable="true" data-word="tú">TÚ</span>
+              <span class="tile" id="tile-p-usted"    draggable="true" data-word="usted">USTED</span>
+            </div>
+            <div class="dnd-list">
+              <div class="dnd-item">
+                <div class="di-sentence">1.<span class="drop-zone" data-answer="yo"></span> hablo tres idiomas.</div>
+              </div>
+              <div class="dnd-item">
+                <div class="di-sentence">2. ¿<span class="drop-zone" data-answer="tú"></span> tienes hermanos, Pablo?</div>
+              </div>
+              <div class="dnd-item">
+                <div class="di-sentence">3.<span class="drop-zone" data-answer="nosotros"></span> comemos a las dos.</div>
+              </div>
+              <div class="dnd-item">
+                <div class="di-sentence">4. Doctor, ¿<span class="drop-zone" data-answer="usted"></span> trabaja los sábados?</div>
+              </div>
+              <div class="dnd-item">
+                <div class="di-sentence">5. Chicos, ¿<span class="drop-zone" data-answer="ustedes"></span> quieren jugar?</div>
+              </div>
+            </div>
+            <div class="ex-actions">
+              <button class="dnd-check ex-btn ex-btn--primary">Verificar</button>
+              <button class="dnd-reset ex-btn ex-btn--ghost">Reiniciar</button>
+              <span class="dnd-score"></span>
+            </div>
+          </div>
+
+          <hr class="dotted">
+
+          <div class="fill-group">
+            <h3 class="ex-section-label">✍️ Escribe el pronombre correcto (mira el verbo)</h3>
+            <div class="fill-list">
+              <div class="fill-item" data-answer="yo">
+                
+                <div class="fi-sentence">1.<span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> vivo en Madrid.</div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="tú">
+                <div class="fi-sentence">2. ¿<span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> hablas inglés, Marta?</div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="nosotros">
+                <div class="fi-sentence">3. Mi hermano y yo: <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> estamos cansados.</div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="ella">
+                <div class="fi-sentence">4. Mi madre es médica. <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> trabaja en un hospital.</div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="él">
+                <div class="fi-sentence">5. Mi padre cocina muy bien. <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> prepara una paella deliciosa.</div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="usted">
+                <div class="fi-sentence">6. Señor, ¿<span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> tiene hora, por favor?</div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="ustedes">
+                <div class="fi-sentence">7. Chicos, ¿<span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> estudian para el examen?</div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="ellos">
+                <div class="fi-sentence">8. Mis abuelos viven en el campo. <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> tienen una granja.</div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="ellas">
+                <div class="fi-sentence">9. Mis hermanas son altas. <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> juegan al baloncesto.</div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="nosotras">
+                <div class="fi-sentence">10. Ana y yo: <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> estamos listas.</div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="yo">
+                <div class="fi-sentence">11.<span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> tengo veinte años.</div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="tú">
+                <div class="fi-sentence">12. ¿<span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> quieres venir al cine, Luis?</div>
+                <span class="fill-hint"></span>
+              </div>
+            </div>
+            <div class="ex-actions">
+              <button class="fill-check ex-btn ex-btn--primary">Verificar</button>
+              <button class="fill-reset ex-btn ex-btn--ghost">Reiniciar</button>
+              <span class="fill-score"></span>
+            </div>
+          </div>
+        </div><!-- /ex-pronombres -->
+
+        <!-- ═════ VARIANTES: TÚ/VOS · USTEDES/VOSOTROS ═════ -->
+        <div id="ex-variantes" class="ex-panel">
 
           <div class="fill-group">
             <h3 class="ex-section-label">✍️ Escribe el verbo con vos</h3>
             <div class="fill-list">
               <div class="fill-item" data-answer="hablás">
-                <div class="fi-sentence">tú hablas → vos <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span></div>
+                <div class="fi-sentence">1. tú hablas → vos <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span></div>
                 <span class="fill-hint"></span>
               </div>
               <div class="fill-item" data-answer="sos">
-                <div class="fi-sentence">tú eres → vos <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span></div>
+                <div class="fi-sentence">2. tú eres → vos <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span></div>
                 <span class="fill-hint"></span>
               </div>
               <div class="fill-item" data-answer="tenés">
-                <div class="fi-sentence">tú tienes → vos <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span></div>
+                <div class="fi-sentence">3. tú tienes → vos <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span></div>
                 <span class="fill-hint"></span>
               </div>
               <div class="fill-item" data-answer="querés">
-                <div class="fi-sentence">tú quieres → vos <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span></div>
+                <div class="fi-sentence">4. tú quieres → vos <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span></div>
                 <span class="fill-hint"></span>
               </div>
               <div class="fill-item" data-answer="vivís">
-                <div class="fi-sentence">tú vives → vos <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span></div>
+                <div class="fi-sentence">5. tú vives → vos <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span></div>
                 <span class="fill-hint"></span>
               </div>
               <div class="fill-item" data-answer="podés">
-                <div class="fi-sentence">tú puedes → vos <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span></div>
+                <div class="fi-sentence">6. tú puedes → vos <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span></div>
+                <span class="fill-hint"></span>
+              </div>
+            </div>
+            <div class="ex-actions">
+              <button class="fill-check ex-btn ex-btn--primary">Verificar</button>
+              <button class="fill-reset ex-btn ex-btn--ghost">Reiniciar</button>
+              <span class="fill-score"></span>
+            </div>
+          </div>
+
+          <hr class="dotted">
+
+          <div class="fill-group">
+            <h3 class="ex-section-label">✍️ De vosotros 🇪🇸 a ustedes 🌎</h3>
+            <div class="fill-list">
+              <div class="fill-item" data-answer="hablan">
+                <div class="fi-sentence">1. vosotros habláis → ustedes <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span></div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="son">
+                <div class="fi-sentence">2. vosotros sois → ustedes <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span></div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="tienen">
+                <div class="fi-sentence">3. vosotros tenéis → ustedes <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span></div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="quieren">
+                <div class="fi-sentence">4. vosotros queréis → ustedes <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span></div>
+                <span class="fill-hint"></span>
+              </div>
+              <div class="fill-item" data-answer="viven">
+                <div class="fi-sentence">5. vosotros vivís → ustedes <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span></div>
                 <span class="fill-hint"></span>
               </div>
             </div>
@@ -328,19 +577,19 @@
             </div>
             <div class="dnd-list">
               <div class="dnd-item">
-                <div class="di-sentence">¿Puedo ir contigo? → ¿Puedo ir <span class="drop-zone" data-answer="con vos"></span>?</div>
+                <div class="di-sentence">1. ¿Puedo ir contigo? → ¿Puedo ir <span class="drop-zone" data-answer="con vos"></span>?</div>
               </div>
               <div class="dnd-item">
-                <div class="di-sentence">¡Ven aquí! → ¡<span class="drop-zone" data-answer="vení"></span> acá!</div>
+                <div class="di-sentence">2. ¡Ven aquí! → ¡<span class="drop-zone" data-answer="vení"></span> acá!</div>
               </div>
               <div class="dnd-item">
-                <div class="di-sentence">Esto es para ti. → Esto es para <span class="drop-zone" data-answer="vos"></span>.</div>
+                <div class="di-sentence">3. Esto es para ti. → Esto es para <span class="drop-zone" data-answer="vos"></span>.</div>
               </div>
               <div class="dnd-item">
-                <div class="di-sentence">¿Qué comes hoy? → ¿Qué <span class="drop-zone" data-answer="comés"></span> hoy?</div>
+                <div class="di-sentence">4. ¿Qué comes hoy? → ¿Qué <span class="drop-zone" data-answer="comés"></span> hoy?</div>
               </div>
               <div class="dnd-item">
-                <div class="di-sentence">¡Dime la verdad! → ¡<span class="drop-zone" data-answer="decime"></span> la verdad!</div>
+                <div class="di-sentence">5. ¡Dime la verdad! → ¡<span class="drop-zone" data-answer="decime"></span> la verdad!</div>
               </div>
             </div>
             <div class="ex-actions">
@@ -349,12 +598,11 @@
               <span class="dnd-score"></span>
             </div>
           </div>
-        </div><!-- /ex-voseo -->
 
-        <!-- ═════ OPCIÓN MÚLTIPLE ═════ -->
-        <div id="ex-opcion" class="ex-panel">
+          <hr class="dotted">
+
           <div class="mc-group">
-            <h3 class="ex-section-label">🔘 Elige la opción correcta</h3>
+            <h3 class="ex-section-label">🔘 Elige la opción correcta según el país</h3>
             <div class="mc-list">
               <div class="mc-item" data-answer="b">
                 <div class="mc-sentence"><span class="fi-num">1.</span> (Buenos Aires) ¿De dónde ___ vos?</div>
@@ -364,32 +612,16 @@
                   <button class="mc-option" data-value="c">es</button>
                 </div>
               </div>
-              <div class="mc-item" data-answer="c">
-                <div class="mc-sentence"><span class="fi-num">2.</span> (México) Chicos, ¿___ vienen a la fiesta?</div>
+              <div class="mc-item" data-answer="a">
+                <div class="mc-sentence"><span class="fi-num">2.</span> (México) ¿___ quieres un café?</div>
                 <div class="mc-options">
-                  <button class="mc-option" data-value="a">vos</button>
-                  <button class="mc-option" data-value="b">ellos</button>
-                  <button class="mc-option" data-value="c">ustedes</button>
-                </div>
-              </div>
-              <div class="mc-item" data-answer="b">
-                <div class="mc-sentence"><span class="fi-num">3.</span> ¿Querés venir ___ al cine?</div>
-                <div class="mc-options">
-                  <button class="mc-option" data-value="a">con mí</button>
-                  <button class="mc-option" data-value="b">conmigo</button>
-                  <button class="mc-option" data-value="c">con yo</button>
-                </div>
-              </div>
-              <div class="mc-item" data-answer="c">
-                <div class="mc-sentence"><span class="fi-num">4.</span> Señora, ¿___ necesita ayuda?</div>
-                <div class="mc-options">
-                  <button class="mc-option" data-value="a">tú</button>
-                  <button class="mc-option" data-value="b">vos</button>
-                  <button class="mc-option" data-value="c">usted</button>
+                  <button class="mc-option" data-value="a">Tú</button>
+                  <button class="mc-option" data-value="b">Vos</button>
+                  <button class="mc-option" data-value="c">Vosotros</button>
                 </div>
               </div>
               <div class="mc-item" data-answer="a">
-                <div class="mc-sentence"><span class="fi-num">5.</span> Vos ___ mucho, ¿no? (dormir)</div>
+                <div class="mc-sentence"><span class="fi-num">3.</span> Vos ___ mucho, ¿no? (dormir)</div>
                 <div class="mc-options">
                   <button class="mc-option" data-value="a">dormís</button>
                   <button class="mc-option" data-value="b">duermís</button>
@@ -397,11 +629,43 @@
                 </div>
               </div>
               <div class="mc-item" data-answer="c">
-                <div class="mc-sentence"><span class="fi-num">6.</span> Este café es para ___. (yo)</div>
+                <div class="mc-sentence"><span class="fi-num">4.</span> (Colombia) Chicos, ¿___ vienen a la fiesta?</div>
                 <div class="mc-options">
-                  <button class="mc-option" data-value="a">yo</button>
-                  <button class="mc-option" data-value="b">mi</button>
-                  <button class="mc-option" data-value="c">mí</button>
+                  <button class="mc-option" data-value="a">vos</button>
+                  <button class="mc-option" data-value="b">vosotros</button>
+                  <button class="mc-option" data-value="c">ustedes</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="b">
+                <div class="mc-sentence"><span class="fi-num">5.</span> (Madrid) Chicos, ¿___ queréis pizza?</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">ustedes</button>
+                  <button class="mc-option" data-value="b">vosotros</button>
+                  <button class="mc-option" data-value="c">vos</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="c">
+                <div class="mc-sentence"><span class="fi-num">6.</span> (Madrid) ¿Vosotros ___ de aquí?</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">son</button>
+                  <button class="mc-option" data-value="b">sos</button>
+                  <button class="mc-option" data-value="c">sois</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="a">
+                <div class="mc-sentence"><span class="fi-num">7.</span> (Perú) Amigos, ¿ustedes ___ hambre?</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">tienen</button>
+                  <button class="mc-option" data-value="b">tenéis</button>
+                  <button class="mc-option" data-value="c">tenés</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="b">
+                <div class="mc-sentence"><span class="fi-num">8.</span> Vosotros (España) = ___ (Latinoamérica)</div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">ellos</button>
+                  <button class="mc-option" data-value="b">ustedes</button>
+                  <button class="mc-option" data-value="c">vos</button>
                 </div>
               </div>
             </div>
@@ -411,7 +675,7 @@
               <span class="mc-score"></span>
             </div>
           </div>
-        </div><!-- /ex-opcion -->
+        </div><!-- /ex-variantes -->
 
       </section>
 
