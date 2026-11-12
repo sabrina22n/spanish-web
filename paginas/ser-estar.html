@@ -52,6 +52,24 @@
     }
     .adj-head-cell.red  { background: #fff1f2; color: var(--red); }
     .adj-head-cell.blue { background: #eff6ff; color: var(--blue); }
+    /* English translations */
+    .en {
+      display: block; font-style: italic; font-weight: 600;
+      font-size: 0.78rem; color: #9ca3af; margin-top: 2px;
+    }
+    .en-inline { font-style: italic; font-weight: 600; font-size: 0.8em; color: #9ca3af; }
+    .use-body em.en { font-size: 0.78rem; color: #9ca3af; margin-top: 1px; }
+    .use-label .en { font-size: 0.6rem; font-style: normal; text-transform: none; color: inherit; opacity: 0.75; }
+    .conj-en { margin-left: auto; font-size: 0.75rem; font-style: italic; color: #9ca3af; font-weight: 600; text-align: right; }
+    .adj-cell .en { font-size: 0.72rem; }
+    td .en { font-size: 0.72rem; }
+    .fi-sentence .en, .mc-sentence .en { line-height: 1.3; margin-top: -2px; }
+    .story-translation {
+      margin: 8px 0 16px; background: #f9fafb; border-radius: 12px; padding: 12px 16px;
+      font-size: 0.88rem; color: #4b5563;
+    }
+    .story-translation summary { cursor: pointer; font-weight: 800; color: var(--dark); }
+    .story-translation p { margin-top: 10px; line-height: 1.6; font-style: italic; }
   </style>
 </head>
 <body>
@@ -69,6 +87,7 @@
     <div class="hero">
       <h1>Ser y Estar</h1>
       <p>Dos verbos para "to be" — aprende cuándo usar cada uno con reglas claras y ejemplos.</p>
+      
     </div>
 
     <nav class="sticky-nav" aria-label="Secciones">
@@ -77,7 +96,7 @@
         <li><a href="#ser">🔴 SER</a></li>
         <li><a href="#estar">🔵 ESTAR</a></li>
         <li><a href="#adjetivos">🔄 Adjetivos</a></li>
-        <li><a href="#resumen">📋 Resumen</a></li>
+        <li><a href="#ejercicios">✏️ Ejercicios</a></li>
       </ul>
     </nav>
 
@@ -90,23 +109,27 @@
         <div class="pair se-pair">
           <div class="pair-half">
             <span class="badge red">SER</span>
-            <p class="def">Características <strong>permanentes o esenciales</strong></p>
-            <p class="sub">Identidad, origen, material, relaciones, tiempo</p>
+            <p class="def">Características <strong>permanentes o esenciales</strong>
+              <span class="en">Permanent or essential characteristics</span></p>
+            <p class="sub">Identidad, origen, material, relaciones, tiempo
+              <span class="en">Identity, origin, material, relationships, time</span></p>
             <div class="examples">
-              <div class="ex">Soy <b>española</b>. (nacionalidad — permanente)</div>
-              <div class="ex">La mesa <b>es</b> de madera. (material — permanente)</div>
-              <div class="ex">Son las <b>3</b>. (hora — objetiva)</div>
+              <div class="ex"><b>Soy</b> española. (nacionalidad — permanente)<span class="en">I am Spanish. (nationality — permanent)</span></div>
+              <div class="ex">La mesa <b>es</b> de madera. (material — permanente)<span class="en">The table is made of wood. (material — permanent)</span></div>
+              <div class="ex"><b>Son</b> las 3. (hora — objetiva)<span class="en">It's 3 o'clock. (time — objective)</span></div>
             </div>
           </div>
           <div class="pair-divider"></div>
           <div class="pair-half">
             <span class="badge blue">ESTAR</span>
-            <p class="def">Estados <strong>temporales o cambiables</strong></p>
-            <p class="sub">Ubicación, salud, emociones, resultados</p>
+            <p class="def">Estados <strong>temporales o cambiantes</strong>
+              <span class="en">Temporary or changeable states</span></p>
+            <p class="sub">Ubicación, salud, emociones, resultados
+              <span class="en">Location, health, emotions, results</span></p>
             <div class="examples">
-              <div class="ex"><b>Estoy</b> en casa. (ubicación — cambia)</div>
-              <div class="ex"><b>Estoy</b> cansada. (estado temporal)</div>
-              <div class="ex">La puerta <b>está</b> cerrada. (resultado)</div>
+              <div class="ex"><b>Estoy</b> en casa. (ubicación — cambia)<span class="en">I am at home. (location — it changes)</span></div>
+              <div class="ex"><b>Estoy</b> cansada. (estado temporal)<span class="en">I am tired. (temporary state)</span></div>
+              <div class="ex">La puerta <b>está</b> cerrada. (resultado)<span class="en">The door is closed. (result)</span></div>
             </div>
           </div>
         </div>
@@ -116,95 +139,131 @@
           <span>
             <strong>Regla de oro:</strong> si describes cómo <em>es algo en esencia</em> → <strong>SER</strong>.
             Si describes cómo <em>está algo ahora mismo</em> → <strong>ESTAR</strong>.
+            <span class="en">Golden rule: if you describe what something <u>is like in essence</u> → SER. If you describe how something <u>is right now</u> → ESTAR.</span>
           </span>
         </div>
 
         <!-- Conjugación: SER y ESTAR -->
-        <h3 class="section-label" style="margin-top:28px">Conjugación — Presente de indicativo</h3>
+        <h3 class="section-label" style="margin-top:28px">Conjugación — Presente de indicativo <span class="en-inline">(Conjugation — present tense)</span></h3>
         <div class="conj-grid">
           <div class="conj-box">
             <div class="conj-box-header red">SER</div>
-            <div class="conj-row"><span class="conj-pron">yo</span><span class="conj-form">soy</span></div>
-            <div class="conj-row"><span class="conj-pron">tú</span><span class="conj-form">eres</span></div>
-            <div class="conj-row"><span class="conj-pron">él/ella/usted</span><span class="conj-form">es</span></div>
-            <div class="conj-row"><span class="conj-pron">nosotros</span><span class="conj-form">somos</span></div>
-            <div class="conj-row"><span class="conj-pron">vosotros</span><span class="conj-form">sois</span></div>
-            <div class="conj-row"><span class="conj-pron">ellos/ustedes</span><span class="conj-form">son</span></div>
+            <div class="conj-row"><span class="conj-pron">yo</span><span class="conj-form">soy</span><span class="conj-en">I am</span></div>
+            <div class="conj-row"><span class="conj-pron">tú</span><span class="conj-form">eres</span><span class="conj-en">you are</span></div>
+            <div class="conj-row"><span class="conj-pron">él/ella/usted</span><span class="conj-form">es</span><span class="conj-en">he/she is, you are</span></div>
+            <div class="conj-row"><span class="conj-pron">nosotros</span><span class="conj-form">somos</span><span class="conj-en">we are</span></div>
+            <div class="conj-row"><span class="conj-pron">vosotros</span><span class="conj-form">sois</span><span class="conj-en">you (pl.) are</span></div>
+            <div class="conj-row"><span class="conj-pron">ellos/ustedes</span><span class="conj-form">son</span><span class="conj-en">they are, you (pl.) are</span></div>
           </div>
           <div class="conj-box">
             <div class="conj-box-header blue">ESTAR</div>
-            <div class="conj-row"><span class="conj-pron">yo</span><span class="conj-form">estoy</span></div>
-            <div class="conj-row"><span class="conj-pron">tú</span><span class="conj-form">estás</span></div>
-            <div class="conj-row"><span class="conj-pron">él/ella/usted</span><span class="conj-form">está</span></div>
-            <div class="conj-row"><span class="conj-pron">nosotros</span><span class="conj-form">estamos</span></div>
-            <div class="conj-row"><span class="conj-pron">vosotros</span><span class="conj-form">estáis</span></div>
-            <div class="conj-row"><span class="conj-pron">ellos/ustedes</span><span class="conj-form">están</span></div>
+            <div class="conj-row"><span class="conj-pron">yo</span><span class="conj-form">estoy</span><span class="conj-en">I am</span></div>
+            <div class="conj-row"><span class="conj-pron">tú</span><span class="conj-form">estás</span><span class="conj-en">you are</span></div>
+            <div class="conj-row"><span class="conj-pron">él/ella/usted</span><span class="conj-form">está</span><span class="conj-en">he/she is, you are</span></div>
+            <div class="conj-row"><span class="conj-pron">nosotros</span><span class="conj-form">estamos</span><span class="conj-en">we are</span></div>
+            <div class="conj-row"><span class="conj-pron">vosotros</span><span class="conj-form">estáis</span><span class="conj-en">you (pl.) are</span></div>
+            <div class="conj-row"><span class="conj-pron">ellos/ustedes</span><span class="conj-form">están</span><span class="conj-en">they are, you (pl.) are</span></div>
           </div>
         </div>
       </section>
 
       <!-- SER -->
       <section id="ser" class="section">
-        <h2 class="section-title"><span class="ico">🔴</span> SER — Usos</h2>
+        <h2 class="section-title"><span class="ico">🔴</span> SER — Usos <span class="en-inline">(uses)</span></h2>
 
         <div class="card">
           <ul class="use-list">
             <li>
-              <span class="use-label red">Identidad</span>
+              <span class="use-label red">Identidad<span class="en">identity</span></span>
               <div class="use-body">
-                Nombre, profesión, nacionalidad, religión
-                <em>Soy María. Eres médico. Somos españoles.</em>
+                Nombre, nacionalidad, religión
+                <span class="en">Name, nationality, religion</span>
+                <em>Soy María. Somos españoles. Es católica.</em>
+                <em class="en">I'm María. We're Spanish. She's Catholic.</em>
               </div>
             </li>
             <li>
-              <span class="use-label red">Origen</span>
+              <span class="use-label red">Profesión<span class="en">profession</span></span>
+              <div class="use-body">
+                Trabajo u ocupación (¡sin artículo!)
+                <span class="en">Job or occupation (no article!)</span>
+                <em>Eres médico. Mi madre es profesora. Somos estudiantes.</em>
+                <em class="en">You're a doctor. My mother is a teacher. We're students.</em>
+              </div>
+            </li>
+            <li>
+              <span class="use-label red">Origen<span class="en">origin</span></span>
               <div class="use-body">
                 De dónde eres o de dónde procede algo
+                <span class="en">Where you are from or where something comes from</span>
                 <em>Soy de México. El vino es de La Rioja.</em>
+                <em class="en">I'm from Mexico. The wine is from La Rioja.</em>
               </div>
             </li>
             <li>
-              <span class="use-label red">Material</span>
+              <span class="use-label red">Material<span class="en">material</span></span>
               <div class="use-body">
                 De qué está hecho algo
+                <span class="en">What something is made of</span>
                 <em>La silla es de madera. El anillo es de oro.</em>
+                <em class="en">The chair is made of wood. The ring is made of gold.</em>
               </div>
             </li>
             <li>
-              <span class="use-label red">Posesión</span>
+              <span class="use-label red">Posesión<span class="en">possession</span></span>
               <div class="use-body">
                 A quién pertenece algo
+                <span class="en">Who something belongs to</span>
                 <em>Este libro es de Ana. ¿De quién es este paraguas?</em>
+                <em class="en">This book is Ana's. Whose umbrella is this?</em>
               </div>
             </li>
             <li>
-              <span class="use-label red">Características</span>
+              <span class="use-label red">Características<span class="en">characteristics</span></span>
               <div class="use-body">
                 Rasgos físicos o de personalidad inherentes
+                <span class="en">Inherent physical or personality traits</span>
                 <em>Pedro es alto y simpático. El cielo es azul.</em>
+                <em class="en">Pedro is tall and friendly. The sky is blue.</em>
               </div>
             </li>
             <li>
-              <span class="use-label red">Relaciones</span>
+              <span class="use-label red">Relaciones<span class="en">relationships</span></span>
               <div class="use-body">
                 Parentesco o relaciones personales
+                <span class="en">Family or personal relationships</span>
                 <em>Ana es mi hermana. Felipe es el jefe.</em>
+                <em class="en">Ana is my sister. Felipe is the boss.</em>
               </div>
             </li>
             <li>
-              <span class="use-label red">Tiempo</span>
+              <span class="use-label red">Tiempo<span class="en">time</span></span>
               <div class="use-body">
                 Hora, fecha, día de la semana
+                <span class="en">Time, date, day of the week</span>
                 <em>Son las tres. Hoy es lunes. Es el 5 de mayo.</em>
+                <em class="en">It's three o'clock. Today is Monday. It's May 5th.</em>
               </div>
             </li>
             <li>
-              <span class="use-label red">Eventos</span>
+              <span class="use-label red">Eventos<span class="en">events</span></span>
               <div class="use-body">
                 Dónde se celebra un evento (no la ubicación de una persona u objeto)
+                <span class="en">Where an event takes place (not the location of a person or object)</span>
                 <em>La boda es en Valencia. El concierto es en el teatro.</em>
+                <em class="en">The wedding is in Valencia. The concert is at the theater.</em>
               </div>
             </li>
+            <li>
+              <span class="use-label red">Precio<span class="en">price</span></span>
+              <div class="use-body">
+                El precio total (al pagar)
+                <span class="en">The total price (when paying)</span>
+                <em>¿Cuánto es? — Son 20 euros. Es un euro.</em>
+                <em class="en">How much is it? — It's 20 euros. It's one euro.</em>
+              </div>
+            </li>
+          
           </ul>
         </div>
 
@@ -213,131 +272,259 @@
           <div>
             <strong>¡Atención con la profesión!</strong> Después de <em>ser</em>, el artículo se omite:<br>
             ✓ <em>Soy médico.</em> &nbsp;✗ <em>Soy un médico.</em> — a menos que haya un adjetivo: <em>Soy un buen médico.</em>
+            <span class="en">Watch out with professions! After <i>ser</i>, the article is dropped: "Soy médico" = I'm a doctor (not "Soy un médico") — unless there's an adjective: "Soy un buen médico" = I'm a good doctor.</span>
           </div>
         </div>
       </section>
 
       <!-- ESTAR -->
       <section id="estar" class="section">
-        <h2 class="section-title"><span class="ico">🔵</span> ESTAR — Usos</h2>
+        <h2 class="section-title"><span class="ico">🔵</span> ESTAR — Usos <span class="en-inline">(uses)</span></h2>
 
         <div class="card">
           <ul class="use-list">
             <li>
-              <span class="use-label blue">Ubicación</span>
+              <span class="use-label blue">Ubicación<span class="en">location</span></span>
               <div class="use-body">
                 Dónde se encuentra una persona, animal o cosa
+                <span class="en">Where a person, animal or thing is</span>
                 <em>Estoy en casa. Las llaves están en la mesa. Madrid está en España.</em>
+                <em class="en">I'm at home. The keys are on the table. Madrid is in Spain.</em>
               </div>
             </li>
             <li>
-              <span class="use-label blue">Salud</span>
+              <span class="use-label blue">Salud<span class="en">health</span></span>
               <div class="use-body">
                 Estado de salud (temporal)
+                <span class="en">State of health (temporary)</span>
                 <em>Estoy enferma. ¿Cómo estás? — Estoy bien, gracias.</em>
+                <em class="en">I'm sick. How are you? — I'm fine, thanks.</em>
               </div>
             </li>
             <li>
-              <span class="use-label blue">Emociones</span>
+              <span class="use-label blue">Emociones<span class="en">emotions</span></span>
               <div class="use-body">
                 Estado emocional o de ánimo
+                <span class="en">Emotional state or mood</span>
                 <em>Estoy feliz. Están muy nerviosos. ¿Por qué estás triste?</em>
+                <em class="en">I'm happy. They're very nervous. Why are you sad?</em>
               </div>
             </li>
             <li>
-              <span class="use-label blue">Gerundio</span>
+              <span class="use-label blue">Gerundio<span class="en">gerund</span></span>
               <div class="use-body">
                 Acción en progreso (estar + -ando / -iendo)
+                <span class="en">Action in progress (estar + -ing)</span>
                 <em>Estoy estudiando. ¿Qué estás haciendo?</em>
+                <em class="en">I'm studying. What are you doing?</em>
               </div>
             </li>
             <li>
-              <span class="use-label blue">Resultado</span>
+              <span class="use-label blue">Resultado<span class="en">result</span></span>
               <div class="use-body">
                 Estado que resulta de una acción anterior
+                <span class="en">State resulting from a previous action</span>
                 <em>La puerta está abierta. La cena está lista. El ordenador está roto.</em>
+                <em class="en">The door is open. Dinner is ready. The computer is broken.</em>
               </div>
             </li>
             <li>
-              <span class="use-label blue">Apariencia</span>
+              <span class="use-label blue">Apariencia<span class="en">appearance</span></span>
               <div class="use-body">
                 Cómo parece o luce algo en un momento concreto
+                <span class="en">How something looks or seems at a specific moment</span>
                 <em>¡Qué guapa estás hoy! Esta sopa está riquísima.</em>
+                <em class="en">You look so pretty today! This soup is delicious.</em>
+              </div>
+            </li>
+            <li>
+              <span class="use-label blue">Posición<span class="en">position</span></span>
+              <div class="use-body">
+                Postura del cuerpo
+                <span class="en">Body position</span>
+                <em>Estoy sentada. Los niños están de pie. El gato está tumbado.</em>
+                <em class="en">I'm sitting. The children are standing. The cat is lying down.</em>
+              </div>
+            </li>
+            <li>
+              <span class="use-label blue">Clima<span class="en">weather</span></span>
+              <div class="use-body">
+                Cómo está el cielo o el tiempo ahora
+                <span class="en">What the sky or weather is like now</span>
+                <em>Está nublado. Hoy está despejado. Está lloviendo.</em>
+                <em class="en">It's cloudy. Today it's clear. It's raining.</em>
+              </div>
+            </li>
+            <!-- <li>
+              <span class="use-label blue">Precio<span class="en">price</span></span>
+              <div class="use-body">
+                Precio que cambia (mercado, ofertas): estar a + precio
+                <span class="en">A price that changes (market, sales): estar a + price</span>
+                <em>Hoy los tomates están a 2 euros el kilo.</em>
+                <em class="en">Today tomatoes are 2 euros a kilo.</em>
+              </div>
+            </li> -->
+            <!-- <li>
+              <span class="use-label blue">Fecha<span class="en">date</span></span>
+              <div class="use-body">
+                Con <em style="display:inline">nosotros</em>: estamos a + fecha / estamos en + mes o estación
+                <span class="en">With "we": estamos a + date / estamos en + month or season</span>
+                <em>Estamos a 5 de mayo. Estamos en verano.</em>
+                <em class="en">It's May 5th. It's summer.</em>
+              </div>
+            </li> -->
+            <li>
+              <span class="use-label blue">Estar de<span class="en">estar de</span></span>
+              <div class="use-body">
+                Situaciones temporales, también un trabajo temporal
+                <span class="en">Temporary situations, also a temporary job</span>
+                <em>Estoy de vacaciones. Está de viaje. Este verano estoy de camarero.</em>
+                <em class="en">I'm on vacation. He's/She's traveling. This summer I'm working as a waiter.</em>
+              </div>
+            </li>
+            <li>
+              <span class="use-label blue">Estado civil<span class="en">marital status</span></span>
+              <div class="use-body">
+                soltero/a · casado/a · divorciado/a · separado/a · viudo/a · prometido/a
+                <span class="en">single · married · divorced · separated · widowed · engaged</span>
+                <em>Estoy casada. Están divorciados. Mi abuelo está viudo. Estamos prometidos.</em>
+                <em class="en">I'm married. They're divorced. My grandfather is widowed. We're engaged.</em>
               </div>
             </li>
           </ul>
         </div>
 
-        <div class="tip yellow">
-          <span class="ti">💡</span>
-          <span>
-            <strong>Muerto</strong> siempre va con <em>estar</em>: <em>El pez está muerto.</em> &nbsp;|&nbsp;
-            <strong>Casado/divorciado</strong> también: <em>Están casados desde 2010.</em>
-          </span>
-        </div>
+
       </section>
 
       <!-- ADJECTIVES THAT CHANGE MEANING -->
       <section id="adjetivos" class="section">
-        <h2 class="section-title"><span class="ico">🔄</span> Adjetivos que Cambian de Significado</h2>
+        <h2 class="section-title"><span class="ico">🔄</span> Adjetivos que Cambian de Significado <span class="en-inline">(adjectives that change meaning)</span></h2>
 
         <p style="font-size:0.92rem; color:#6b7280; margin-bottom:24px; font-weight:600;">
           Con <strong style="color:var(--red)">SER</strong> describen una <strong>característica inherente</strong>.
           Con <strong style="color:var(--blue)">ESTAR</strong> describen un <strong>estado en ese momento</strong>.
+          <span class="en">With SER they describe an inherent characteristic. With ESTAR they describe a state at that moment.</span>
         </p>
 
         <div class="adj-grid">
 
           <div class="adj-card">
-            <div class="adj-card-head">BUENO / MALO</div>
+            <div class="adj-card-head">BUENO</div>
             <div class="adj-head-row">
               <div class="adj-head-cell red">SER</div>
               <div class="adj-head-cell blue">ESTAR</div>
             </div>
             <div class="adj-row">
               <div class="adj-cell">
-                <div class="meaning">good person / bad person</div>
-                <em>Es buena persona. Es muy malo.</em>
+                <div class="meaning">good (person / quality)</div>
+                <em>Es buena persona. Este libro es bueno.</em>
+                <span class="en">He/She is a good person. This book is good.</span>
               </div>
               <div class="adj-cell">
-                <div class="meaning">tasty / ill</div>
-                <em>¡Está buenísimo! Está mala (enferma).</em>
+                <div class="meaning">tasty (food)</div>
+                <em>¡La paella está buenísima!</em>
+                <span class="en">The paella is delicious!</span>
               </div>
             </div>
           </div>
 
           <div class="adj-card">
-            <div class="adj-card-head">LISTO / TONTO</div>
+            <div class="adj-card-head">MALO</div>
             <div class="adj-head-row">
               <div class="adj-head-cell red">SER</div>
               <div class="adj-head-cell blue">ESTAR</div>
             </div>
             <div class="adj-row">
               <div class="adj-cell">
-                <div class="meaning">clever / foolish</div>
-                <em>Es muy lista. Es un poco tonto.</em>
+                <div class="meaning">bad (person / quality)</div>
+                <em>Es un niño malo. Esta película es mala.</em>
+                <span class="en">He's a naughty boy. This movie is bad.</span>
               </div>
               <div class="adj-cell">
-                <div class="meaning">ready / dazed</div>
-                <em>¿Estás listo? Estaba atontado.</em>
+                <div class="meaning">ill / gone bad</div>
+                <em>Estoy mala. La leche está mala.</em>
+                <span class="en">I'm ill. The milk has gone bad.</span>
               </div>
             </div>
           </div>
 
           <div class="adj-card">
-            <div class="adj-card-head">RICO / POBRE</div>
+            <div class="adj-card-head">LISTO</div>
             <div class="adj-head-row">
               <div class="adj-head-cell red">SER</div>
               <div class="adj-head-cell blue">ESTAR</div>
             </div>
             <div class="adj-row">
               <div class="adj-cell">
-                <div class="meaning">wealthy / poor</div>
-                <em>Es muy rica. Son pobres.</em>
+                <div class="meaning">clever / smart</div>
+                <em>Es muy lista.</em>
+                <span class="en">She's very clever.</span>
               </div>
               <div class="adj-cell">
-                <div class="meaning">delicious / broke</div>
-                <em>¡Está riquísimo! Estoy muy pobre este mes.</em>
+                <div class="meaning">ready</div>
+                <em>¿Estás listo? La cena está lista.</em>
+                <span class="en">Are you ready? Dinner is ready.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="adj-card">
+            <div class="adj-card-head">TONTO</div>
+            <div class="adj-head-row">
+              <div class="adj-head-cell red">SER</div>
+              <div class="adj-head-cell blue">ESTAR</div>
+            </div>
+            <div class="adj-row">
+              <div class="adj-cell">
+                <div class="meaning">silly / stupid (personality)</div>
+                <em>Es un poco tonto.</em>
+                <span class="en">He's a bit stupid.</span>
+              </div>
+              <div class="adj-cell">
+                <div class="meaning">acting silly (right now)</div>
+                <em>Hoy estás muy tonto.</em>
+                <span class="en">You're being really silly today.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="adj-card">
+            <div class="adj-card-head">RICO</div>
+            <div class="adj-head-row">
+              <div class="adj-head-cell red">SER</div>
+              <div class="adj-head-cell blue">ESTAR</div>
+            </div>
+            <div class="adj-row">
+              <div class="adj-cell">
+                <div class="meaning">rich / wealthy</div>
+                <em>Es muy rica.</em>
+                <span class="en">She's very rich.</span>
+              </div>
+              <div class="adj-cell">
+                <div class="meaning">delicious</div>
+                <em>¡Está riquísimo!</em>
+                <span class="en">It's delicious!</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="adj-card">
+            <div class="adj-card-head">POBRE</div>
+            <div class="adj-head-row">
+              <div class="adj-head-cell red">SER</div>
+              <div class="adj-head-cell blue">ESTAR</div>
+            </div>
+            <div class="adj-row">
+              <div class="adj-cell">
+                <div class="meaning">poor (no money)</div>
+                <em>Son pobres.</em>
+                <span class="en">They're poor.</span>
+              </div>
+              <div class="adj-cell">
+                <div class="meaning">broke (temporarily)</div>
+                <em>Estoy pobre este mes.</em>
+                <span class="en">I'm broke this month.</span>
               </div>
             </div>
           </div>
@@ -352,10 +539,12 @@
               <div class="adj-cell">
                 <div class="meaning">boring (personality)</div>
                 <em>Es un poco aburrido.</em>
+                <span class="en">He's a bit boring.</span>
               </div>
               <div class="adj-cell">
                 <div class="meaning">bored (right now)</div>
                 <em>Estoy aburrida hoy.</em>
+                <span class="en">I'm bored today.</span>
               </div>
             </div>
           </div>
@@ -368,48 +557,74 @@
             </div>
             <div class="adj-row">
               <div class="adj-cell">
-                <div class="meaning">safe (inherently)</div>
+                <div class="meaning">safe</div>
                 <em>Este barrio es muy seguro.</em>
+                <span class="en">This neighborhood is very safe.</span>
               </div>
               <div class="adj-cell">
                 <div class="meaning">sure / certain</div>
                 <em>Estoy seguro de que es verdad.</em>
+                <span class="en">I'm sure it's true.</span>
               </div>
             </div>
           </div>
 
           <div class="adj-card">
-            <div class="adj-card-head">VIVO / MUERTO</div>
+            <div class="adj-card-head">VIVO</div>
             <div class="adj-head-row">
               <div class="adj-head-cell red">SER</div>
               <div class="adj-head-cell blue">ESTAR</div>
             </div>
             <div class="adj-row">
               <div class="adj-cell">
-                <div class="meaning">sharp / clever</div>
+                <div class="meaning">sharp / quick-witted</div>
                 <em>Es muy vivo para los negocios.</em>
+                <span class="en">He's very sharp at business.</span>
               </div>
               <div class="adj-cell">
-                <div class="meaning">alive / dead</div>
-                <em>El pez está vivo. La planta está muerta.</em>
+                <div class="meaning">alive</div>
+                <em>El pez está vivo.</em>
+                <span class="en">The fish is alive.</span>
               </div>
             </div>
           </div>
 
           <div class="adj-card">
-            <div class="adj-card-head">ABIERTO / CERRADO</div>
+            <div class="adj-card-head">ABIERTO</div>
             <div class="adj-head-row">
               <div class="adj-head-cell red">SER</div>
               <div class="adj-head-cell blue">ESTAR</div>
             </div>
             <div class="adj-row">
               <div class="adj-cell">
-                <div class="meaning">open-minded / reserved</div>
+                <div class="meaning">open-minded</div>
                 <em>Es una persona muy abierta.</em>
+                <span class="en">He/She is a very open-minded person.</span>
               </div>
               <div class="adj-cell">
-                <div class="meaning">open / closed (state)</div>
+                <div class="meaning">open (state)</div>
+                <em>La ventana está abierta.</em>
+                <span class="en">The window is open.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="adj-card">
+            <div class="adj-card-head">CERRADO</div>
+            <div class="adj-head-row">
+              <div class="adj-head-cell red">SER</div>
+              <div class="adj-head-cell blue">ESTAR</div>
+            </div>
+            <div class="adj-row">
+              <div class="adj-cell">
+                <div class="meaning">closed-minded / reserved</div>
+                <em>Mi abuelo es muy cerrado.</em>
+                <span class="en">My grandfather is very closed-minded.</span>
+              </div>
+              <div class="adj-cell">
+                <div class="meaning">closed (state)</div>
                 <em>La tienda está cerrada los domingos.</em>
+                <span class="en">The shop is closed on Sundays.</span>
               </div>
             </div>
           </div>
@@ -424,10 +639,12 @@
               <div class="adj-cell">
                 <div class="meaning">self-interested / greedy</div>
                 <em>Es muy interesado — solo piensa en el dinero.</em>
+                <span class="en">He's very self-interested — he only thinks about money.</span>
               </div>
               <div class="adj-cell">
-                <div class="meaning">interested in sth</div>
+                <div class="meaning">interested in something</div>
                 <em>Estoy interesada en ese curso.</em>
+                <span class="en">I'm interested in that course.</span>
               </div>
             </div>
           </div>
@@ -435,83 +652,362 @@
         </div>
       </section>
 
-      <!-- RESUMEN -->
-      <section id="resumen" class="section">
-        <h2 class="section-title"><span class="ico">📋</span> Resumen — SER vs ESTAR</h2>
+      <!-- EJERCICIOS -->
+      <section id="ejercicios" class="section">
+        <h2 class="section-title"><span class="ico">✏️</span> Ejercicios <span class="en-inline">(exercises)</span></h2>
 
-        <div class="tbl-card">
-          <table>
-            <thead>
-              <tr>
-                <th>Uso</th>
-                <th class="th-orange" style="background:var(--red)!important">SER</th>
-                <th class="th-blue">ESTAR</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Identidad/nombre</strong></td>
-                <td>✅ <em>Soy Carlos.</em></td>
-                <td>—</td>
-              </tr>
-              <tr>
-                <td><strong>Origen</strong></td>
-                <td>✅ <em>Es de Francia.</em></td>
-                <td>—</td>
-              </tr>
-              <tr>
-                <td><strong>Profesión</strong></td>
-                <td>✅ <em>Es profesora.</em></td>
-                <td>—</td>
-              </tr>
-              <tr>
-                <td><strong>Características físicas/personalidad</strong></td>
-                <td>✅ <em>Es alto y simpático.</em></td>
-                <td>—</td>
-              </tr>
-              <tr>
-                <td><strong>Material</strong></td>
-                <td>✅ <em>Es de madera.</em></td>
-                <td>—</td>
-              </tr>
-              <tr>
-                <td><strong>Hora / fecha / día</strong></td>
-                <td>✅ <em>Son las 5. Es lunes.</em></td>
-                <td>—</td>
-              </tr>
-              <tr>
-                <td><strong>Ubicación de persona/cosa</strong></td>
-                <td>—</td>
-                <td>✅ <em>Estoy en Madrid.</em></td>
-              </tr>
-              <tr>
-                <td><strong>Ubicación de evento</strong></td>
-                <td>✅ <em>La fiesta es en mi casa.</em></td>
-                <td>—</td>
-              </tr>
-              <tr>
-                <td><strong>Estado de salud</strong></td>
-                <td>—</td>
-                <td>✅ <em>Estoy enferma.</em></td>
-              </tr>
-              <tr>
-                <td><strong>Estado emocional</strong></td>
-                <td>—</td>
-                <td>✅ <em>Estoy muy feliz.</em></td>
-              </tr>
-              <tr>
-                <td><strong>Acción en progreso</strong></td>
-                <td>—</td>
-                <td>✅ <em>Estoy comiendo.</em></td>
-              </tr>
-              <tr>
-                <td><strong>Resultado de acción</strong></td>
-                <td>—</td>
-                <td>✅ <em>La puerta está abierta.</em></td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="ex-tabs">
+          <button class="ex-tab active" data-group="ser">🔴 Usos de SER</button>
+          <button class="ex-tab" data-group="estar">🔵 Usos de ESTAR</button>
+          <button class="ex-tab" data-group="mezcla">🎲 SER o ESTAR</button>
+          <button class="ex-tab" data-group="historia">📖 Historia</button>
         </div>
+
+        <!-- ═════ SER ═════ -->
+        <div id="ex-ser" class="ex-panel active">
+          <div class="tip blue" style="margin-bottom:16px">
+            <span class="ti">💡</span>
+            <span>Completa con la forma correcta de <strong>SER</strong> en presente: <strong>soy, eres, es, somos, son</strong>.
+              <span class="en">Fill in with the correct form of SER in the present tense.</span></span>
+          </div>
+          <div class="fill-group">
+            <div class="fill-list">
+                <div class="fill-item" data-answer="soy">
+                  <div class="fi-sentence"><span class="fi-num">1.</span> Yo <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> Laura. <span class="fi-options">(ser · identidad)</span><span class="en">I'm Laura.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="es">
+                  <div class="fi-sentence"><span class="fi-num">2.</span> Mi hermano <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> profesor. <span class="fi-options">(ser · profesión)</span><span class="en">My brother is a teacher.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="somos">
+                  <div class="fi-sentence"><span class="fi-num">3.</span> Nosotros <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> de Colombia. <span class="fi-options">(ser · origen)</span><span class="en">We're from Colombia.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="es">
+                  <div class="fi-sentence"><span class="fi-num">4.</span> La mesa <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> de madera. <span class="fi-options">(ser · material)</span><span class="en">The table is made of wood.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="es">
+                  <div class="fi-sentence"><span class="fi-num">5.</span> Hoy <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> martes. <span class="fi-options">(ser · día)</span><span class="en">Today is Tuesday.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="Son">
+                  <div class="fi-sentence"><span class="fi-num">6.</span> <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> las cuatro y media. <span class="fi-options">(ser · hora)</span><span class="en">It's half past four.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="es">
+                  <div class="fi-sentence"><span class="fi-num">7.</span> Este coche <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> de mi padre. <span class="fi-options">(ser · posesión)</span><span class="en">This car is my father's.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="eres">
+                  <div class="fi-sentence"><span class="fi-num">8.</span> Tú <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> muy simpático. <span class="fi-options">(ser · personalidad)</span><span class="en">You're very friendly.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="son">
+                  <div class="fi-sentence"><span class="fi-num">9.</span> Ana y Pablo <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> mis primos. <span class="fi-options">(ser · relación)</span><span class="en">Ana and Pablo are my cousins.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="es">
+                  <div class="fi-sentence"><span class="fi-num">10.</span> El concierto <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> en el estadio. <span class="fi-options">(ser · evento)</span><span class="en">The concert is at the stadium.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="es">
+                  <div class="fi-sentence"><span class="fi-num">11.</span> ¿Cuánto <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span>? — 15 euros. <span class="fi-options">(ser · precio total)</span><span class="en">How much is it? — 15 euros.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="Es">
+                  <div class="fi-sentence"><span class="fi-num">12.</span> <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> importante dormir bien. <span class="fi-options">(ser · opinión)</span><span class="en">It's important to sleep well.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+            </div>
+              <div class="ex-actions">
+                <button class="fill-check ex-btn ex-btn--primary">Verificar</button>
+                <button class="fill-reset ex-btn ex-btn--ghost">Reiniciar</button>
+                <span class="fill-score"></span>
+              </div>
+          </div>
+        </div><!-- /ex-ser -->
+
+        <!-- ═════ ESTAR ═════ -->
+        <div id="ex-estar" class="ex-panel">
+          <div class="tip blue" style="margin-bottom:16px">
+            <span class="ti">💡</span>
+            <span>Completa con la forma correcta de <strong>ESTAR</strong> en presente: <strong>estoy, estás, está, estamos, están</strong>.
+              <span class="en">Fill in with the correct form of ESTAR in the present tense.</span></span>
+          </div>
+          <div class="fill-group">
+            <div class="fill-list">
+                <div class="fill-item" data-answer="estoy">
+                  <div class="fi-sentence"><span class="fi-num">1.</span> Yo <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> en casa. <span class="fi-options">(estar · ubicación)</span><span class="en">I'm at home.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="está">
+                  <div class="fi-sentence"><span class="fi-num">2.</span> Mi madre <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> enferma. <span class="fi-options">(estar · salud)</span><span class="en">My mother is sick.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="estás">
+                  <div class="fi-sentence"><span class="fi-num">3.</span> ¿Cómo <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span>? — Muy bien, gracias. <span class="fi-options">(estar · salud)</span><span class="en">How are you? — Very well, thanks.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="estamos">
+                  <div class="fi-sentence"><span class="fi-num">4.</span> Nosotros <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> muy contentos. <span class="fi-options">(estar · emoción)</span><span class="en">We're very happy.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="están">
+                  <div class="fi-sentence"><span class="fi-num">5.</span> Los niños <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> jugando en el parque. <span class="fi-options">(estar · gerundio)</span><span class="en">The children are playing in the park.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="está">
+                  <div class="fi-sentence"><span class="fi-num">6.</span> La ventana <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> abierta. <span class="fi-options">(estar · resultado)</span><span class="en">The window is open.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="está">
+                  <div class="fi-sentence"><span class="fi-num">7.</span> Ella <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> sentada en el sofá. <span class="fi-options">(estar · posición)</span><span class="en">She's sitting on the sofa.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="está">
+                  <div class="fi-sentence"><span class="fi-num">8.</span> Hoy <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> nublado. <span class="fi-options">(estar · clima)</span><span class="en">Today it's cloudy.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="están">
+                  <div class="fi-sentence"><span class="fi-num">9.</span> Las manzanas <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> a 3 euros el kilo. <span class="fi-options">(estar · precio que cambia)</span><span class="en">Apples are 3 euros a kilo.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="están">
+                  <div class="fi-sentence"><span class="fi-num">10.</span> Mis padres <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> de vacaciones. <span class="fi-options">(estar · estar de)</span><span class="en">My parents are on vacation.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="estás">
+                  <div class="fi-sentence"><span class="fi-num">11.</span> Tú <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> muy guapa hoy. <span class="fi-options">(estar · apariencia)</span><span class="en">You look very pretty today.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+                <div class="fill-item" data-answer="está">
+                  <div class="fi-sentence"><span class="fi-num">12.</span> Mi hermana <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> casada. <span class="fi-options">(estar · estado civil)</span><span class="en">My sister is married.</span></div>
+                  <span class="fill-hint"></span>
+                </div>
+            </div>
+              <div class="ex-actions">
+                <button class="fill-check ex-btn ex-btn--primary">Verificar</button>
+                <button class="fill-reset ex-btn ex-btn--ghost">Reiniciar</button>
+                <span class="fill-score"></span>
+              </div>
+          </div>
+        </div><!-- /ex-estar -->
+
+        <!-- ═════ MEZCLA ═════ -->
+        <div id="ex-mezcla" class="ex-panel">
+          <div class="tip blue" style="margin-bottom:16px">
+            <span class="ti">💡</span>
+            <span>Elige el verbo correcto: ¿<strong>SER</strong> o <strong>ESTAR</strong>? Piensa en el uso.
+              <span class="en">Choose the correct verb: SER or ESTAR? Think about the use.</span></span>
+          </div>
+          <div class="mc-group">
+            <div class="mc-list">
+              <div class="mc-item" data-answer="a">
+                <div class="mc-sentence"><span class="fi-num">1.</span> La sopa ___ fría. ¡Caliéntala en el microondas!<span class="en">The soup is cold. Heat it up in the microwave!</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">está</button>
+                  <button class="mc-option" data-value="b">es</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="b">
+                <div class="mc-sentence"><span class="fi-num">2.</span> Mi padre ___ médico.<span class="en">My father is a doctor.</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">está</button>
+                  <button class="mc-option" data-value="b">es</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="b">
+                <div class="mc-sentence"><span class="fi-num">3.</span> Madrid ___ en España.<span class="en">Madrid is in Spain.</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">es</button>
+                  <button class="mc-option" data-value="b">está</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="a">
+                <div class="mc-sentence"><span class="fi-num">4.</span> La fiesta ___ en mi casa.<span class="en">The party is at my house.</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">es</button>
+                  <button class="mc-option" data-value="b">está</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="a">
+                <div class="mc-sentence"><span class="fi-num">5.</span> Julieta ___ muy alta, como su padre.<span class="en">Julieta is very tall, like her father.</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">es</button>
+                  <button class="mc-option" data-value="b">está</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="b">
+                <div class="mc-sentence"><span class="fi-num">6.</span> Julieta ___ muy cansada hoy.<span class="en">Emma is very tired today.</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">es</button>
+                  <button class="mc-option" data-value="b">está</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="a">
+                <div class="mc-sentence"><span class="fi-num">7.</span> Mi profesor de historia ___ muy aburrido: siempre habla de lo mismo.<span class="en">My history teacher is very boring: he always talks about the same thing.</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">es</button>
+                  <button class="mc-option" data-value="b">está</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="b">
+                <div class="mc-sentence"><span class="fi-num">8.</span> Yo ___ aburrido. No hay nada que hacer.<span class="en">I'm bored. There's nothing to do.</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">soy</button>
+                  <button class="mc-option" data-value="b">estoy</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="b">
+                <div class="mc-sentence"><span class="fi-num">9.</span> ¡Mmm! Pruebo el pastel y ___ riquísimo.<span class="en">Mmm! I'm tasting the cake and it's delicious.</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">es</button>
+                  <button class="mc-option" data-value="b">está</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="b">
+                <div class="mc-sentence"><span class="fi-num">10.</span> Mi vecino ___ muy rico. Tiene tres casas.<span class="en">My neighbor is very rich. He has three houses.</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">está</button>
+                  <button class="mc-option" data-value="b">es</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="a">
+                <div class="mc-sentence"><span class="fi-num">11.</span> ¿___ listo? Nos vamos ya.<span class="en">Are you ready? We're leaving now.</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">Estás</button>
+                  <button class="mc-option" data-value="b">Eres</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="a">
+                <div class="mc-sentence"><span class="fi-num">12.</span> Ya ___ las diez de la noche.<span class="en">It's already ten at night.</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">son</button>
+                  <button class="mc-option" data-value="b">están</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="b">
+                <div class="mc-sentence"><span class="fi-num">13.</span> Los libros ___ de Carmen.<span class="en">The books are Carmen's.</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">están</button>
+                  <button class="mc-option" data-value="b">son</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="a">
+                <div class="mc-sentence"><span class="fi-num">14.</span> Los libros ___ en la mochila.<span class="en">The books are in the backpack.</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">están</button>
+                  <button class="mc-option" data-value="b">son</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="b">
+                <div class="mc-sentence"><span class="fi-num">15.</span> Nosotros ___ de Perú.<span class="en">We're from Peru.</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">estamos</button>
+                  <button class="mc-option" data-value="b">somos</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="a">
+                <div class="mc-sentence"><span class="fi-num">16.</span> Mi abuela ___ en el hospital.<span class="en">My grandmother is in the hospital.</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">está</button>
+                  <button class="mc-option" data-value="b">es</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="a">
+                <div class="mc-sentence"><span class="fi-num">17.</span> ¿Qué ___ haciendo ahora?<span class="en">What are you doing now?</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">estás</button>
+                  <button class="mc-option" data-value="b">eres</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="b">
+                <div class="mc-sentence"><span class="fi-num">18.</span> Mi hermano ___ muy inteligente.<span class="en">My brother is very intelligent.</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">está</button>
+                  <button class="mc-option" data-value="b">es</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="b">
+                <div class="mc-sentence"><span class="fi-num">19.</span> Hoy ___ el 12 de octubre.<span class="en">Today is October 12th.</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">está</button>
+                  <button class="mc-option" data-value="b">es</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="a">
+                <div class="mc-sentence"><span class="fi-num">20.</span> ¡Qué nervioso ___! Mañana tengo un examen.<span class="en">I'm so nervous! I have an exam tomorrow.</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">estoy</button>
+                  <button class="mc-option" data-value="b">soy</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="a">
+                <div class="mc-sentence"><span class="fi-num">21.</span> El anillo ___ de plata.<span class="en">The ring is made of silver.</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">es</button>
+                  <button class="mc-option" data-value="b">está</button>
+                </div>
+              </div>
+              <div class="mc-item" data-answer="b">
+                <div class="mc-sentence"><span class="fi-num">22.</span> La tienda ___ cerrada. Vuelve mañana.<span class="en">The shop is closed. Come back tomorrow.</span></div>
+                <div class="mc-options">
+                  <button class="mc-option" data-value="a">es</button>
+                  <button class="mc-option" data-value="b">está</button>
+                </div>
+              </div>
+            </div>
+              <div class="ex-actions">
+                <button class="mc-check ex-btn ex-btn--primary">Verificar</button>
+                <button class="mc-reset ex-btn ex-btn--ghost">Reiniciar</button>
+                <span class="mc-score"></span>
+              </div>
+          </div>
+        </div><!-- /ex-mezcla -->
+
+        <!-- ═════ HISTORIA ═════ -->
+        <div id="ex-historia" class="ex-panel">
+          <div class="tip blue" style="margin-bottom:16px">
+            <span class="ti">💡</span>
+            <span>Lee la historia de Sofía y completa con <strong>SER</strong> o <strong>ESTAR</strong> en presente.
+              <span class="en">Read Sofía's story and fill in with SER or ESTAR in the present tense.</span></span>
+          </div>
+          <div class="fill-group">
+              <div class="story-text" style="margin-bottom:16px">
+                ¡Hola! Me llamo Sofía y <span class="fill-item" data-answer="soy"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(ser)</span> de Valencia, en España. <span class="fill-item" data-answer="Soy"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(ser)</span> estudiante de Medicina y tengo 22 años. Ahora <span class="fill-item" data-answer="estoy"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(estar)</span> en Buenos Aires porque <span class="fill-item" data-answer="estoy"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(estar)</span> de intercambio en la universidad.
+              </div>
+              <div class="story-text" style="margin-bottom:16px">
+                Mi apartamento <span class="fill-item" data-answer="es"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(ser)</span> pequeño pero muy bonito. <span class="fill-item" data-answer="Está"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(estar)</span> en el barrio de Palermo, cerca de un parque. Mi compañera de piso <span class="fill-item" data-answer="es"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(ser)</span> argentina, <span class="fill-item" data-answer="es"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(ser)</span> muy simpática y siempre me ayuda con el español.
+              </div>
+              <div class="story-text" style="margin-bottom:16px">
+                Hoy <span class="fill-item" data-answer="es"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(ser)</span> sábado y <span class="fill-item" data-answer="son"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(ser)</span> las once de la mañana. <span class="fill-item" data-answer="Estamos"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(estar)</span> en la cocina. Mi compañera <span class="fill-item" data-answer="está"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(estar)</span> preparando mate y yo <span class="fill-item" data-answer="estoy"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(estar)</span> un poco cansada porque anoche estudié mucho.
+              </div>
+              <div class="story-text" style="margin-bottom:16px">
+                El tiempo hoy <span class="fill-item" data-answer="está"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(estar)</span> genial: no hace frío y el cielo <span class="fill-item" data-answer="está"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(estar)</span> despejado. Esta noche hay una fiesta. La fiesta <span class="fill-item" data-answer="es"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(ser)</span> en casa de unos amigos. Yo <span class="fill-item" data-answer="estoy"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(estar)</span> muy contenta porque mis amigos de aquí <span class="fill-item" data-answer="son"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(ser)</span> increíbles.
+              </div>
+              <div class="story-text" style="margin-bottom:16px">
+                A veces echo de menos a mi familia. Mis padres <span class="fill-item" data-answer="están"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(estar)</span> casados desde hace 25 años y <span class="fill-item" data-answer="son"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(ser)</span> muy cariñosos. Pero la vida en Buenos Aires <span class="fill-item" data-answer="es"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(ser)</span> una aventura, ¡y yo <span class="fill-item" data-answer="estoy"><span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span><span class="fill-hint"></span></span> <span class="fi-options">(estar)</span> feliz aquí!
+              </div>
+            <details class="story-translation">
+              <summary>🇬🇧 Ver traducción <span class="en-inline">(show translation)</span></summary>
+              <p>
+                Hi! My name is Sofía and I'm from Valencia, in Spain. I'm a medical student and I'm 22 years old. Right now I'm in Buenos Aires because I'm on an exchange at the university.<br><br>
+                My apartment is small but very pretty. It's in the Palermo neighborhood, near a park. My roommate is Argentinian, she's very friendly and she always helps me with my Spanish.<br><br>
+                Today is Saturday and it's eleven in the morning. We're in the kitchen. My roommate is making mate and I'm a bit tired because I studied a lot last night.<br><br>
+                The weather today is great: it's not cold and the sky is clear. There's a party tonight. The party is at some friends' house. I'm very happy because my friends here are amazing.<br><br>
+                Sometimes I miss my family. My parents have been married for 25 years and they're very loving. But life in Buenos Aires is an adventure, and I'm happy here!
+              </p>
+            </details>
+              <div class="ex-actions">
+                <button class="fill-check ex-btn ex-btn--primary">Verificar</button>
+                <button class="fill-reset ex-btn ex-btn--ghost">Reiniciar</button>
+                <span class="fill-score"></span>
+              </div>
+          </div>
+        </div><!-- /ex-historia -->
+
       </section>
 
     </div><!-- /.content -->
