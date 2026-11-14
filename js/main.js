@@ -34,11 +34,12 @@
       group.querySelectorAll('.fill-item').forEach(item => {
         const input  = item.querySelector('.fill-input');
         const hint   = item.querySelector('.fill-hint');
-        const answer = item.dataset.answer;
-        const ok     = normalize(input.value) === normalize(answer);
+        // data-answer may list alternatives separated by "|" (e.g. "hablara|hablase")
+        const answers = item.dataset.answer.split('|');
+        const ok     = answers.some(a => normalize(input.value) === normalize(a));
         input.classList.toggle('correct',   ok);
         input.classList.toggle('incorrect', !ok);
-        if (!ok) { hint.textContent = '→ ' + answer; hint.style.display = 'inline-block'; }
+        if (!ok) { hint.textContent = '→ ' + answers.join(' / '); hint.style.display = 'inline-block'; }
         else     { hint.style.display = 'none'; }
         if (ok) correct++;
         total++;
