@@ -13,6 +13,12 @@ const GRAMMAR_NAV = [
       { id: 'adverbios',     label: 'Adverbios',          href: '#',                  icon: '🔄', available: false },
       { id: 'conectores',    label: 'Conectores',         href: '#',                  icon: '🔗', available: false },
     ]
+  },
+  {
+    section: 'Práctica',
+    items: [
+      { id: 'ejercicios',    label: 'Ejercicios',         href: 'ejercicios.html',    icon: '✏️', available: true  },
+    ]
   }
 ];
 
