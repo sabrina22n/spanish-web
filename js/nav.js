@@ -1,5 +1,11 @@
 const GRAMMAR_NAV = [
   {
+    section: 'Empieza aquí',
+    items: [
+      { id: 'primera-clase', label: 'Tu primera clase',   href: 'primera-clase.html', icon: '👋', available: true  },
+    ]
+  },
+  {
     section: 'Gramática',
     items: [
       { id: 'verbos',        label: 'Tiempos verbales',  href: 'verbos.html',        icon: '⏰', available: true  },

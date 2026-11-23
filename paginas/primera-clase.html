@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu primera clase | Español con Sabrina</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header class="top-bar">
+  <a href="../index.html" class="top-bar-logo">📚 <span class="site-name">Español con Sabrina</span></a>
+  <button class="hamburger" id="hamburger" aria-label="Menú">☰</button>
+</header>
+
+<div class="app-body">
+  <nav class="sidebar" id="sidebar-nav" aria-label="Navegación principal"></nav>
+
+  <main class="page-main">
+
+    <div class="hero">
+      <div class="level-badge">Clase de prueba</div>
+      <h1>¡Tu primera clase de español! 👋</h1>
+      <p>Así funcionan nuestras clases: primero un ejemplo real, después la gramática, luego el vocabulario… y al final, ¡hablas tú!</p>
+    </div>
+
+    <nav class="sticky-nav" aria-label="Secciones">
+      <ul>
+        <li><a href="#dinamica">🧭 Cómo es la clase</a></li>
+        <li><a href="#ejemplo">📖 1. Ejemplo</a></li>
+        <li><a href="#gramatica">🧩 2. Gramática</a></li>
+        <li><a href="#vocabulario">🗂️ 3. Vocabulario</a></li>
+        <li><a href="#habla">🎤 4. ¡Habla tú!</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+
+      <!-- ═════════════ DINÁMICA ═════════════ -->
+      <section id="dinamica" class="section">
+        <h2 class="section-title"><span class="ico">🧭</span> ¿Cómo es una clase?</h2>
+        <p class="sub">Siempre seguimos los mismos cuatro pasos. Así aprendes la gramática y el vocabulario <strong>en contexto</strong>, no de memoria.</p>
+
+        <div class="steps-grid">
+          <a href="#ejemplo" class="step-card step-red">
+            <span class="step-num">1</span>
+            <span class="step-ico">📖</span>
+            <span class="step-title">Ejemplo</span>
+            <span class="step-desc">Leemos un texto real y corto.</span>
+          </a>
+          <a href="#gramatica" class="step-card step-blue">
+            <span class="step-num">2</span>
+            <span class="step-ico">🧩</span>
+            <span class="step-title">Gramática</span>
+            <span class="step-desc">Descubrimos la regla que hay detrás del texto.</span>
+          </a>
+          <a href="#vocabulario" class="step-card step-green">
+            <span class="step-num">3</span>
+            <span class="step-ico">🗂️</span>
+            <span class="step-title">Vocabulario</span>
+            <span class="step-desc">Ampliamos con las palabras más útiles del tema.</span>
+          </a>
+          <a href="#habla" class="step-card step-purple">
+            <span class="step-num">4</span>
+            <span class="step-ico">🎤</span>
+            <span class="step-title">¡Habla tú!</span>
+            <span class="step-desc">Usas todo lo aprendido para hablar de ti.</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ═════════════ 1. EJEMPLO ═════════════ -->
+      <section id="ejemplo" class="section">
+        <h2 class="section-title"><span class="ico">📖</span> Paso 1 · El ejemplo: «Mi día»</h2>
+
+        <div class="card">
+          <div class="story-head">
+            <div class="story-avatar">👩🏻‍🎓</div>
+            <div>
+              <div class="def">María Pérez</div>
+            </div>
+            <button class="ex-btn ex-btn--ghost story-toggle" id="toggle-verbs" aria-pressed="false">🔍 Marcar los verbos</button>
+          </div>
+
+          <div class="example-story story-plain" id="maria-story">
+            <p>Me llamo María Pérez, <span class="hl-tense">tengo</span> diecinueve años. <span class="hl-past">Nací</span> en Málaga en España pero <span class="hl-tense">vivo</span> en Edimburgo en Escocia. <span class="hl-tense">Soy</span> estudiante de Periodismo.</p>
+            <p>De lunes a viernes <span class="hl-tense">me levanto</span> a las siete y media, <span class="hl-tense">desayuno</span> y <span class="hl-tense">camino</span> hasta la universidad. <span class="hl-tense">Entro</span> en clase a las nueve y <span class="hl-tense">salgo</span> a la una.</p>
+            <p>Al mediodía <span class="hl-tense">como</span> en mi casa y <span class="hl-tense">veo</span> la televisión. Por la tarde, <span class="hl-tense">estudio</span> hasta las siete y después <span class="hl-tense">quedo</span> con mis amigas.</p>
+            <p>A mí <span class="hl-tense">me gusta</span> mucho el teatro, la música y las películas. Los viernes por la noche <span class="hl-tense">ceno</span> con mis amigas y <span class="hl-tense">vamos</span> juntas al cine.</p>
+            <p>Todos los sábados <span class="hl-tense">voy</span> al gimnasio y veo mi serie favorita.</p>
+            <p>El domingo por la tarde, si <span class="hl-tense">hay</span> sol, <span class="hl-tense">salgo</span> con mi perro a dar un paseo en la montaña. ¡<span class="hl-tense">Me encantan</span> los animales!</p>
+          </div>
+
+          <details class="story-translation">
+            <summary>🇬🇧 Ver traducción <span class="en-inline">(show translation)</span></summary>
+            <p>My name is María Pérez and I am nineteen years old. I was born in Málaga, in Spain, but I live in Edinburgh, in Scotland. I am a Journalism student.</p>
+            <p>From Monday to Friday I get up at half past seven, have breakfast and walk to the university. I go into class at nine and I leave at one.</p>
+            <p>At midday I have lunch at home and watch TV. In the afternoon I study until seven and then I meet up with my friends.</p>
+            <p>I really like theatre, music and films. On Friday nights I have dinner with my friends and we go to the cinema together.</p>
+            <p>Every Saturday I go to the gym and watch my favourite series.</p>
+            <p>On Sunday afternoon, if it's sunny, I go out with my dog for a walk in the mountains. I love animals!</p>
+          </details>
+
+          
+        </div>
+
+        
+
+      <!-- ═════════════ 2. GRAMÁTICA ═════════════ -->
+      <section id="gramatica" class="section">
+        <h2 class="section-title"><span class="ico">🧩</span> Paso 2 · La gramática: el presente</h2>
+
+        <div class="card">
+          <p class="def">¿Por qué María usa el presente?</p>
+          <p class="sub">Porque habla de su <strong>rutina</strong>: cosas que hace normalmente, todas las semanas.</p>
+          <div class="examples">
+            <div class="ex">De lunes a viernes <b>me levanto</b> a las siete y media.</div>
+            <div class="ex">Todos los sábados <b>visito</b> a mi familia.</div>
+            <div class="ex">Los viernes por la noche <b>cenamos</b> pizza.</div>
+          </div>
+        </div>
+
+        <h3 class="section-label" style="margin-top:28px">Verbos regulares</h3>
+        <div class="card">
+          <p class="def">Formación: <strong>raíz</strong> (infinitivo sin -ar, -er, -ir) + terminación</p>
+          <div class="tbl-card" style="margin-top:16px; margin-bottom:0">
+            <table>
+              <thead>
+                <tr>
+                  <th>Persona</th>
+                  <th>-AR · estudiar</th>
+                  <th>-ER · comer</th>
+                  <th>-IR · vivir</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><em>yo</em></td><td>estudi<span class="conj-end">o</span></td><td>com<span class="conj-end">o</span></td><td>viv<span class="conj-end">o</span></td></tr>
+                <tr><td><em>tú</em></td><td>estudi<span class="conj-end">as</span></td><td>com<span class="conj-end">es</span></td><td>viv<span class="conj-end">es</span></td></tr>
+                <tr><td><em>él/ella/usted</em></td><td>estudi<span class="conj-end">a</span></td><td>com<span class="conj-end">e</span></td><td>viv<span class="conj-end">e</span></td></tr>
+                <tr><td><em>nosotros/-as</em></td><td>estudi<span class="conj-end">amos</span></td><td>com<span class="conj-end">emos</span></td><td>viv<span class="conj-end">imos</span></td></tr>
+                <tr><td><em>vosotros/-as</em></td><td>estudi<span class="conj-end">áis</span></td><td>com<span class="conj-end">éis</span></td><td>viv<span class="conj-end">ís</span></td></tr>
+                <tr><td><em>ellos/ellas/ustedes</em></td><td>estudi<span class="conj-end">an</span></td><td>com<span class="conj-end">en</span></td><td>viv<span class="conj-end">en</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tip yellow" style="margin-top:16px">
+            <span class="ti">🎯</span>
+            <span>Para presentarte, la forma más importante es <strong>yo</strong>: casi siempre termina en <span class="conj-end">-o</span> → <em>estudi<span class="conj-end">o</span>, viv<span class="conj-end">o</span>, trabaj<span class="conj-end">o</span>, desayun<span class="conj-end">o</span></em>.</span>
+          </div>
+        </div>
+
+        <h3 class="section-label" style="margin-top:28px">Los verbos del texto</h3>
+        <div class="card">
+          <p class="def">Algunos verbos de María:</p>
+          <div class="tbl-card" style="margin-top:16px; margin-bottom:0">
+            <table>
+              <thead>
+                <tr>
+                  <th>Tipo</th>
+                  <th>En el texto</th>
+                  <th>Infinitivo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><span class="tag tag--green">regulares</span></td><td>desayun<span class="conj-end">o</span>, com<span class="conj-end">o</span>, viv<span class="conj-end">o</span></td><td>desayunar, comer, vivir</td></tr>
+                <tr><td><span class="tag tag--orange">irregulares</span></td><td><span class="hl-orange">soy</span>, <span class="hl-orange">tengo</span>, <span class="hl-orange">salgo</span></td><td>ser, tener, salir</td></tr>
+                <tr><td><span class="tag tag--blue">reflexivos</span></td><td><span class="hl-d">me</span> llamo, <span class="hl-d">me</span> levanto</td><td>llamar<span class="hl-d">se</span>, levantar<span class="hl-d">se</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <h3 class="section-label" style="margin-top:28px">¡Practica! Completa con el presente (yo)</h3>
+        <div class="fill-group">
+          <div class="fill-list">
+            <div class="fill-item" data-answer="vivo">
+              <div class="fi-sentence"><span class="fi-num">1.</span> Yo <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> en Buenos Aires. <span class="fi-options">(vivir)</span></div>
+              <span class="fill-hint"></span>
+            </div>
+            <div class="fill-item" data-answer="desayuno">
+              <div class="fi-sentence"><span class="fi-num">2.</span> Todos los días <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> café con tostadas. <span class="fi-options">(desayunar)</span></div>
+              <span class="fill-hint"></span>
+            </div>
+            <div class="fill-item" data-answer="soy">
+              <div class="fi-sentence"><span class="fi-num">3.</span> <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> profesora de inglés. <span class="fi-options">(ser)</span></div>
+              <span class="fill-hint"></span>
+            </div>
+            <div class="fill-item" data-answer="levanto">
+              <div class="fi-sentence"><span class="fi-num">4.</span> Los lunes me <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> a las seis. <span class="fi-options">(levantarse)</span></div>
+              <span class="fill-hint"></span>
+            </div>
+            <div class="fill-item" data-answer="tengo">
+              <div class="fi-sentence"><span class="fi-num">5.</span> <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> treinta y dos años. <span class="fi-options">(tener)</span></div>
+              <span class="fill-hint"></span>
+            </div>
+            <div class="fill-item" data-answer="trabajo">
+              <div class="fi-sentence"><span class="fi-num">6.</span> <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> en un banco de lunes a viernes. <span class="fi-options">(trabajar)</span></div>
+              <span class="fill-hint"></span>
+            </div>
+            <div class="fill-item" data-answer="salgo">
+              <div class="fi-sentence"><span class="fi-num">7.</span> Los sábados <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> con mis amigos. <span class="fi-options">(salir)</span></div>
+              <span class="fill-hint"></span>
+            </div>
+            <div class="fill-item" data-answer="como">
+              <div class="fi-sentence"><span class="fi-num">8.</span> Al mediodía <span class="fi-blank"><input type="text" class="fill-input" placeholder="?"></span> en la oficina. <span class="fi-options">(comer)</span></div>
+              <span class="fill-hint"></span>
+            </div>
+          </div>
+          <div class="ex-actions">
+            <button class="fill-check ex-btn ex-btn--primary">Verificar</button>
+            <button class="fill-reset ex-btn ex-btn--ghost">Reiniciar</button>
+            <span class="fill-score"></span>
+          </div>
+        </div>
+
+        <p class="sub" style="margin-top:16px">¿Quieres ver más? 👉 <a href="verbos-indicativo-presente.html" style="color:var(--red); font-weight:800">Presente de indicativo completo</a> · <a href="verbos-reflexivos.html" style="color:var(--red); font-weight:800">Verbos reflexivos</a></p>
+      </section>
+
+      <!-- ═════════════ 3. VOCABULARIO ═════════════ -->
+      <section id="vocabulario" class="section">
+        <h2 class="section-title"><span class="ico">🗂️</span> Paso 3 · El vocabulario: acciones habituales</h2>
+        <p class="sub">Los verbos más útiles para hablar de tu rutina. Debajo de cada uno tienes su <strong>traducción</strong> al inglés.</p>
+
+        <div class="vocab-grid">
+          <div class="vocab-card"><span class="vc-ico">⏰</span><span class="vc-verb">despertarse</span><span class="vc-yo">to wake up</span></div>
+          <div class="vocab-card"><span class="vc-ico">🌅</span><span class="vc-verb">levantarse</span><span class="vc-yo">to get up</span></div>
+          <div class="vocab-card"><span class="vc-ico">😴</span><span class="vc-verb">dormir</span><span class="vc-yo">to sleep</span></div>
+          <div class="vocab-card"><span class="vc-ico">🛏️</span><span class="vc-verb">acostarse</span><span class="vc-yo">to go to bed</span></div>
+          <div class="vocab-card"><span class="vc-ico">🚿</span><span class="vc-verb">ducharse</span><span class="vc-yo">to shower</span></div>
+          <div class="vocab-card"><span class="vc-ico">🪥</span><span class="vc-verb">lavarse los dientes</span><span class="vc-yo">to brush your teeth</span></div>
+          <div class="vocab-card"><span class="vc-ico">💼</span><span class="vc-verb">trabajar</span><span class="vc-yo">to work</span></div>
+          <div class="vocab-card"><span class="vc-ico">👕</span><span class="vc-verb">vestirse</span><span class="vc-yo">to get dressed</span></div>
+          <div class="vocab-card"><span class="vc-ico">📺</span><span class="vc-verb">ver la tele</span><span class="vc-yo">to watch TV</span></div>
+          <div class="vocab-card"><span class="vc-ico">🥐</span><span class="vc-verb">desayunar</span><span class="vc-yo">to have breakfast</span></div>
+          <div class="vocab-card"><span class="vc-ico">🍽️</span><span class="vc-verb">comer</span><span class="vc-yo">to eat</span></div>
+          <div class="vocab-card"><span class="vc-ico">🥪</span><span class="vc-verb">almorzar</span><span class="vc-yo">to have lunch</span></div>
+          <div class="vocab-card"><span class="vc-ico">🌙</span><span class="vc-verb">cenar</span><span class="vc-yo">to have dinner</span></div>
+          <div class="vocab-card"><span class="vc-ico">⚽</span><span class="vc-verb">hacer deporte</span><span class="vc-yo">to exercise</span></div>
+          <div class="vocab-card"><span class="vc-ico">🧽</span><span class="vc-verb">limpiar</span><span class="vc-yo">to clean</span></div>
+          <div class="vocab-card"><span class="vc-ico">📚</span><span class="vc-verb">estudiar</span><span class="vc-yo">to study</span></div>
+          <div class="vocab-card"><span class="vc-ico">🍳</span><span class="vc-verb">cocinar</span><span class="vc-yo">to cook</span></div>
+          <div class="vocab-card"><span class="vc-ico">🛒</span><span class="vc-verb">hacer la compra</span><span class="vc-yo">to do the shopping</span></div>
+          <div class="vocab-card"><span class="vc-ico">🚶</span><span class="vc-verb">pasear</span><span class="vc-yo">to go for a walk</span></div>
+          <div class="vocab-card"><span class="vc-ico">🐕</span><span class="vc-verb"> pasear al perro</span><span class="vc-yo">to walk the dog</span></div>
+          <div class="vocab-card"><span class="vc-ico">👯</span><span class="vc-verb">quedar con amigos/as</span><span class="vc-yo">to meet up with friends</span></div>
+          <div class="vocab-card"><span class="vc-ico">🚪</span><span class="vc-verb">salir de casa</span><span class="vc-yo">to leave home</span></div>
+          <div class="vocab-card"><span class="vc-ico">🏠</span><span class="vc-verb">volver a casa</span><span class="vc-yo">to go back home</span></div>
+          <div class="vocab-card"><span class="vc-ico">🛋️</span><span class="vc-verb">descansar</span><span class="vc-yo">to rest</span></div>
+        </div>
+
+        <h3 class="section-label" style="margin-top:28px">Expresiones de tiempo</h3>
+        <div class="card">
+          <p class="def">Para ordenar tu rutina:</p>
+          <div class="time-pills">
+            <span class="time-pill">🗓️ de lunes a viernes <span class="tp-en">Monday to Friday</span></span>
+            <span class="time-pill">🕐 a la una / a las + hora <span class="tp-en">at one o'clock / at + time</span></span>
+            <span class="time-pill">☀️ por la mañana <span class="tp-en">in the morning</span></span>
+            <span class="time-pill">🕛 al mediodía <span class="tp-en">at noon</span></span>
+            <span class="time-pill">🌇 por la tarde <span class="tp-en">in the afternoon / evening</span></span>
+            <span class="time-pill">🌙 por la noche <span class="tp-en">at night</span></span>
+            <span class="time-pill">🔁 los viernes <span class="tp-en">on Fridays</span></span>
+            <span class="time-pill">🔁 todos los sábados <span class="tp-en">every Saturday</span></span>
+            <span class="time-pill">⏪ antes de… <span class="tp-en">before…</span></span>
+            <span class="time-pill">⏩ después de… <span class="tp-en">after…</span></span>
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- ═════════════ 4. ¡HABLA TÚ! ═════════════ -->
+      <section id="habla" class="section">
+        <h2 class="section-title"><span class="ico">🎤</span> Paso 4 · ¡Ahora tú! Preséntate como María</h2>
+        <p class="sub">En clase lo haces <strong>hablando</strong>. Aquí puedes prepararlo primero por escrito. Cubre estos 5 puntos:</p>
+
+        <div class="points-row">
+          <span class="point-chip">🌍 Nacionalidad</span>
+          <span class="point-chip">🏠 Residencia</span>
+          <span class="point-chip">💼 Profesión</span>
+          <span class="point-chip">⏰ Rutina</span>
+          <span class="point-chip">🎨 Pasatiempos</span>
+        </div>
+
+        <div class="wp-group" data-storage="primera-clase">
+          <div class="wp-item">
+            <div class="wp-head">
+              <span class="wp-q"><span class="fi-num">1.</span> 🌍 ¿Cómo te llamas? ¿De dónde eres?</span>
+              <span class="wp-tag ind">Nacionalidad</span>
+            </div>
+            <div class="wp-starter">💬 Me llamo… / Tengo… años. / Soy de… / Soy (italiano/a, brasileño/a…)</div>
+            <textarea class="wp-answer" rows="2" placeholder="Escribe tu respuesta aquí…"></textarea>
+            <details class="wp-example">
+              <summary>👀 Así lo dice María</summary>
+              <p>Me llamo María Pérez, <span class="hl-tense">tengo</span> diecinueve años. <span class="hl-past">Nací</span> en Málaga: <span class="hl-tense">soy</span> española.</p>
+            </details>
+          </div>
+          <div class="wp-item">
+            <div class="wp-head">
+              <span class="wp-q"><span class="fi-num">2.</span> 🏠 ¿Dónde vives?</span>
+              <span class="wp-tag imp">Residencia</span>
+            </div>
+            <div class="wp-starter">💬 Vivo en… / Ahora vivo en…, pero soy de…</div>
+            <textarea class="wp-answer" rows="2" placeholder="Escribe tu respuesta aquí…"></textarea>
+            <details class="wp-example">
+              <summary>👀 Así lo dice María</summary>
+              <p><span class="hl-past">Nací</span> en Málaga, pero <span class="hl-tense">vivo</span> en Granada.</p>
+            </details>
+          </div>
+          <div class="wp-item">
+            <div class="wp-head">
+              <span class="wp-q"><span class="fi-num">3.</span> 💼 ¿A qué te dedicas?</span>
+              <span class="wp-tag ambos">Profesión</span>
+            </div>
+            <div class="wp-starter">💬 Soy (médico/a, profesor/a, estudiante…) / Trabajo en… / Estudio…</div>
+            <textarea class="wp-answer" rows="2" placeholder="Escribe tu respuesta aquí…"></textarea>
+            <details class="wp-example">
+              <summary>👀 Así lo dice María</summary>
+              <p><span class="hl-tense">Soy</span> estudiante de primer curso de Periodismo.</p>
+            </details>
+          </div>
+          <div class="wp-item">
+            <div class="wp-head">
+              <span class="wp-q"><span class="fi-num">4.</span> ⏰ ¿Cómo es un día normal para ti?</span>
+              <span class="wp-tag ind">Rutina</span>
+            </div>
+            <div class="wp-starter">💬 De lunes a viernes me levanto a las… / Por la mañana… / Al mediodía… / Por la tarde… / Por la noche…</div>
+            <textarea class="wp-answer" rows="4" placeholder="Escribe tu respuesta aquí…"></textarea>
+            <details class="wp-example">
+              <summary>👀 Así lo dice María</summary>
+              <p>De lunes a viernes <span class="hl-tense">me levanto</span> a las siete y media, <span class="hl-tense">desayuno</span> y <span class="hl-tense">camino</span> hasta la universidad. Al mediodía <span class="hl-tense">como</span> en mi casa. Por la tarde <span class="hl-tense">estudio</span> hasta las siete.</p>
+            </details>
+          </div>
+          <div class="wp-item">
+            <div class="wp-head">
+              <span class="wp-q"><span class="fi-num">5.</span> 🎨 ¿Qué te gusta hacer en tu tiempo libre?</span>
+              <span class="wp-tag imp">Pasatiempos</span>
+            </div>
+            <div class="wp-starter">💬 Me gusta… / Me gustan… / Me encanta… / Los fines de semana…</div>
+            <textarea class="wp-answer" rows="3" placeholder="Escribe tu respuesta aquí…"></textarea>
+            <details class="wp-example">
+              <summary>👀 Así lo dice María</summary>
+              <p><span class="hl-tense">Me gusta</span> mucho el cine, el teatro y la música. Los viernes por la noche <span class="hl-tense">bailo</span> en la discoteca y los domingos <span class="hl-tense">salgo</span> con mi perro. ¡<span class="hl-tense">Me encantan</span> los animales!</p>
+            </details>
+          </div>
+
+          <div class="ex-actions" style="margin-top:8px">
+            <button class="wp-compile ex-btn ex-btn--primary">📝 Ver mi presentación completa</button>
+            <button class="wp-reset ex-btn ex-btn--ghost">Borrar todo</button>
+          </div>
+          <div class="wp-result" hidden>
+            <h3 class="section-label">Mi presentación</h3>
+            <div class="wp-story"></div>
+            <div class="tip yellow" style="margin-top:14px">
+              <span class="ti">✅</span>
+              <span><strong>Revisa tu texto:</strong> ¿hablas de los 5 puntos? ¿Los verbos en <strong>yo</strong> terminan en <span class="conj-end">-o</span> (<em>vivo, trabajo, desayuno</em>)? ¿Usas <em>me</em> con los reflexivos (<em>me levanto, me ducho</em>)? Ahora, ¡léelo en voz alta! 🎤</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</div>
+
+<footer>
+  <p>Gramática Española · Aprende con explicaciones claras y ejemplos reales</p>
+</footer>
+
+<script src="../js/nav.js"></script>
+<script src="../js/main.js"></script>
+<script>buildSidebar('primera-clase');</script>
+<script>
+// Toggle verb highlighting in María's story
+(function () {
+  const btn = document.getElementById('toggle-verbs');
+  const story = document.getElementById('maria-story');
+  btn.addEventListener('click', () => {
+    const on = story.classList.toggle('story-plain');
+    btn.setAttribute('aria-pressed', String(!on));
+    btn.textContent = on ? '🔍 Marcar los verbos' : '🙈 Ocultar los verbos';
+  });
+})();
+
+// Writing prompts: autosave + compile
+document.querySelectorAll('.wp-group').forEach(group => {
+  const key = 'wp-' + group.dataset.storage;
+  const areas = [...group.querySelectorAll('.wp-answer')];
+  const result = group.querySelector('.wp-result');
+  const story = group.querySelector('.wp-story');
+  try {
+    const saved = JSON.parse(localStorage.getItem(key) || '[]');
+    areas.forEach((a, i) => { if (saved[i]) a.value = saved[i]; });
+  } catch (e) {}
+  const save = () => {
+    try { localStorage.setItem(key, JSON.stringify(areas.map(a => a.value))); } catch (e) {}
+  };
+  areas.forEach(a => a.addEventListener('input', save));
+  group.querySelector('.wp-compile').addEventListener('click', () => {
+    const parts = areas.map(a => a.value.trim()).filter(Boolean);
+    story.textContent = parts.length ? parts.join(' ') : 'Todavía no has escrito nada. ¡Responde a las preguntas!';
+    result.hidden = false;
+    result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+  group.querySelector('.wp-reset').addEventListener('click', () => {
+    if (!confirm('¿Seguro que quieres borrar todas tus respuestas?')) return;
+    areas.forEach(a => { a.value = ''; });
+    save();
+    result.hidden = true;
+  });
+});
+</script>
+</body>
+</html>
